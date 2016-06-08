@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="smart-industry-biz:war">
+    <output-path>$PROJECT_DIR$/smart-industry-biz/target</output-path>
+    <root id="archive" name="smart-industry-biz.war">
+      <element id="artifact" artifact-name="smart-industry-biz:war exploded" />
+    </root>
+  </artifact>
+</component>
