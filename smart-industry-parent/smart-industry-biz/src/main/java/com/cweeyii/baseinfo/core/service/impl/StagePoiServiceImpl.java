@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 
 import javax.annotation.Resource;
+import java.util.List;
 
 
 /**
@@ -26,6 +27,11 @@ public class StagePoiServiceImpl implements StagePoiService {
     @Override
     public StagePoi findById(Long id) {
         return stagePoiMapper.findById(id);
+    }
+
+    @Override
+    public List<StagePoi> findByIds(List<Long> ids) {
+        return stagePoiMapper.findByIds(ids);
     }
 
 }

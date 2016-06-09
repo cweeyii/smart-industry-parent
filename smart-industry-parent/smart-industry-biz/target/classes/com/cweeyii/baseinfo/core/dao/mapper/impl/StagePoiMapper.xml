@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.cweeyii.baseinfo.core.dao.mapper.StagePoiMapper" >
+<mapper namespace="com.cweeyii.baseinfo.core.dao.mapper.StagePoiMapper">
 
     <sql id="Base_Column_List">
         id, address, point_name, brand_id, brand_name, alias, info, open_info, longitude, latitude, city_id,
@@ -10,7 +10,7 @@
         price_person, city_location_id, open_date
     </sql>
 
-	<insert id="insert" parameterType="com.cweeyii.baseinfo.core.domain.StagePoi">
+    <insert id="insert" parameterType="com.cweeyii.baseinfo.core.domain.StagePoi">
         insert into stage_poi(id, address, point_name, brand_id, brand_name, alias, info, open_info, longitude, latitude, city_id,
         district_id, biz_area_id, barea_id, barea_ids, landmark, subway_ids, phone, type_id, source, creator_id,
         create_time, modify_time, merge_id, accurate_result, close_status, operate_status, sync_status, poi_type,
@@ -25,9 +25,20 @@
         )
 	</insert>
 
-	<select id="findById" resultType="com.cweeyii.baseinfo.core.domain.StagePoi" parameterType="java.util.Map">
-		select <include refid="Base_Column_List"/>
+    <select id="findById" resultType="com.cweeyii.baseinfo.core.domain.StagePoi" parameterType="java.util.Map">
+        select
+        <include refid="Base_Column_List"/>
         from stage_poi
         where id=#{id}
-	</select>
+    </select>
+
+    <select id="findByIds" resultType="com.cweeyii.baseinfo.core.domain.StagePoi" parameterType="java.util.Map">
+        select
+        <include refid="Base_Column_List"/>
+        from stage_poi
+        where id in
+        <foreach collection="list" item="id" index="index" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </select>
 </mapper>
