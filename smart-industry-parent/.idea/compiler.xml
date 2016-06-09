@@ -24,10 +24,18 @@
         <processorPath useClasspath="true" />
         <module name="smart-industry-biz" />
       </profile>
+      <profile default="false" name="Annotation profile for smart-industry-task" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="smart-industry-task" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="smart-industry-biz" target="1.7" />
       <module name="smart-industry-parent" target="1.5" />
+      <module name="smart-industry-task" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
