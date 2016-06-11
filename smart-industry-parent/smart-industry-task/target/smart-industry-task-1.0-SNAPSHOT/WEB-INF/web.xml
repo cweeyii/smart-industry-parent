@@ -9,7 +9,7 @@
         <param-value>
             classpath*:webmvc-config.xml,classpath:applicationContext-datasource.xml,classpath:applicationContext-task.xml,
             classpath*:webmvc-basic-webapp.xml,classpath*:applicationContext-beans.xml,classpath*:applicationContext-mq.xml,
-            classpath*:applicationContext-mq-sender.xml,classpath*:applicationContext-mq-listener.xml
+            classpath*:applicationContext-mq-sender.xml,classpath*:applicationContext-mq-listener.xml,classpath*:applicationContext-redis.xml
         </param-value>
     </context-param>
     <context-param>

@@ -428,7 +428,7 @@ public class StagePoi implements Serializable {
     public void setLocationId(Integer locationId) {
         this.locationId = locationId;
     }
-	
+
 	@Transient
 	public String getCatId() {
 		return catId;
@@ -437,7 +437,7 @@ public class StagePoi implements Serializable {
 	public void setCatId(String catId) {
 		this.catId = catId;
 	}
-	
+
 	public Integer getPricePerson() {
 		return pricePerson;
 	}

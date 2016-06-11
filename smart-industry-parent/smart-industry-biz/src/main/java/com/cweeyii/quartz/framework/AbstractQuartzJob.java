@@ -175,7 +175,7 @@ public abstract class AbstractQuartzJob implements Job, Serializable, BeanNameAw
         //线下不发送报警
         String environment = System.getProperty("environment");
         if (!"online".equals(environment)) {
-            LOGGER.info("线下环境不发送报警[environment=" + environment + "]");
+            LOGGER.error("线下环境不发送报警[environment=" + environment + "]");
             return;
         }
         try {
@@ -187,17 +187,14 @@ public abstract class AbstractQuartzJob implements Job, Serializable, BeanNameAw
             data.put("time", DateUtil.Date2StringSec(new Date()));
             data.put("hostname", ServerUtil.getHostName());
             data.put("message", e.getMessage());
-            StringBuilder xmContent = new StringBuilder("我擦，定时任务出错啦，谁写的，又没测试吧，赶紧请客吃饭！[jobName=" + (this.getClass().getSimpleName()) + "][hostname=" + ServerUtil.getHostName() + "][exceptionMessage=" + e.getMessage() + "]");
-            if (context != null) {
+            if (!(context instanceof ArgsJobExecutionContext) && context != null) {
                 JobDetail jobDetail = context.getJobDetail();
                 Trigger trigger = context.getTrigger();
-                //发大象
-                xmContent.append("[description=" + jobDetail.getDescription() + "]");
                 data.put("description", jobDetail.getDescription());
                 data.put("jobDetail", jobDetail.getKey().toString());
                 data.put("trigger", trigger.getKey().toString());
             }
-            LOGGER.warn(xmContent.toString());
+            LOGGER.error(data.toString());
         } catch (Exception e2) {
             LOGGER.error("发送定时任务失败通知失败", e2);
         }

@@ -11,7 +11,7 @@
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
             <bean class="com.cweeyii.interceptor.OpenTimeAccessInterceptor">
-                <property name="openingTime" value="9"/>
+                <property name="openingTime" value="1"/>
                 <property name="closingTime" value="24"/>
                 <property name="mappingURL" value=".*"/>
             </bean>

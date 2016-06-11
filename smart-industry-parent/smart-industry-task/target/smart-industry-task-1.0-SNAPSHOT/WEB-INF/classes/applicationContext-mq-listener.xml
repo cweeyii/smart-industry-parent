@@ -19,6 +19,6 @@
         <rabbit:listener queues="gis_queue" ref="printListener"/>
     </rabbit:listener-container>
 
-    <bean id="printListener" class="com.cweeyii.rabbitmq.reciever.PrintListener"></bean>
+    <bean id="printListener" class="com.cweeyii.rabbitmq.reciever.DefaultListener"></bean>
 
 </beans>
