@@ -1,8 +1,8 @@
 package com.cweeyii.cache.framework;
 
 
-import com.cweeyii.cache.framework.provider.AbstractDataProviderUnit;
-import com.cweeyii.cache.framework.manager.DataProviderManager;
+import com.cweeyii.cache.framework.provider.AbstractDataRepertoryUnit;
+import com.cweeyii.cache.framework.manager.DataRepertoryManager;
 import com.cweeyii.util.EnterpriseUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +25,7 @@ public class DBDataReader<K,V> extends AbstractDataReader<K,V> {
     private static final Logger LOGGER = LoggerFactory.getLogger(DBDataReader.class);
 
     @Resource
-    private DataProviderManager dataProviderManager;
+    private DataRepertoryManager dataProviderManager;
 
 
     @SuppressWarnings("unchecked")
@@ -35,7 +35,7 @@ public class DBDataReader<K,V> extends AbstractDataReader<K,V> {
         List<K> existKeys = new ArrayList<>(keys);
 
         //根据baseDataProvider对数据进行过滤
-        AbstractDataProviderUnit baseDataProviderUnit = dataProviderManager.getBaseDataProviderUnitByType(object.getSimpleName());
+        AbstractDataRepertoryUnit baseDataProviderUnit = dataProviderManager.getBaseDataProviderUnitByType(object.getSimpleName());
         if(baseDataProviderUnit != null){
             resultMap = baseDataProviderUnit.getObjectFromDB(keys);
             //POI必须存在
@@ -43,13 +43,13 @@ public class DBDataReader<K,V> extends AbstractDataReader<K,V> {
         }
 
         //获取数据提供单元
-        Set<AbstractDataProviderUnit> providerUnits
+        Set<AbstractDataRepertoryUnit> providerUnits
                 = dataProviderManager.getDataProviderUnitsByFieldsAndClass(fields,object.getSimpleName());
         if(CollectionUtils.isEmpty(providerUnits)){
             LOGGER.info("数据提供单元为BaseDataProvider；fields = " + fields);
             return resultMap;
         }
-        for(AbstractDataProviderUnit providerUnit:providerUnits){
+        for(AbstractDataRepertoryUnit providerUnit:providerUnits){
             //从数据库读取对应字段的值
             Map<K,V> dbMap = providerUnit.getObjectFromDB(existKeys);
             for(Map.Entry<K,V> entry:dbMap.entrySet()){

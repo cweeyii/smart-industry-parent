@@ -1,18 +1,18 @@
 package com.cweeyii.cache.framework.vo;
 
 
-import com.cweeyii.cache.framework.annotation.BaseDataProvider;
+import com.cweeyii.cache.framework.annotation.ClassDataRepertory;
+import com.cweeyii.cache.framework.annotation.CacheDataType;
 import com.cweeyii.cache.framework.annotation.CacheEntity;
-import com.cweeyii.cache.framework.annotation.DataServiceUnit;
-import com.cweeyii.cache.framework.annotation.MedisDataType;
+import com.cweeyii.cache.framework.annotation.ItemProviderUnit;
 import com.cweeyii.rabbitmq.framework.vo.InternalMessageFactory;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 
 @SuppressWarnings("unused")
-@BaseDataProvider(value = "EnterpriseDataProviderUnit")
-@CacheEntity(MedisDataType.Map)
+@ClassDataRepertory(value = "EnterpriseDataRepertoryUnit")
+@CacheEntity(CacheDataType.Map)
 @Component
 public class EnterpriseRichnessView implements Serializable {
 
@@ -20,63 +20,63 @@ public class EnterpriseRichnessView implements Serializable {
      * part 1 :POI基础信息
      */
     // POI ID
-    @DataServiceUnit(dataProviderUnit = "EnterpriseDataProviderUnit",
+    @ItemProviderUnit(dataProviderUnit = "EnterpriseDataRepertoryUnit",
             relatedMessageType = {InternalMessageFactory.MessageType.POI_CREATE,
                     InternalMessageFactory.MessageType.POI_CREATE_V2,
                     InternalMessageFactory.MessageType.POI_MODIFY_BASE,
                     InternalMessageFactory.MessageType.POI_MODIFY_CORE})
     private Long id;
     // 企业名
-    @DataServiceUnit(dataProviderUnit = "EnterpriseDataProviderUnit",
+    @ItemProviderUnit(dataProviderUnit = "EnterpriseDataRepertoryUnit",
             relatedMessageType = {InternalMessageFactory.MessageType.POI_CREATE,
                     InternalMessageFactory.MessageType.POI_CREATE_V2,
                     InternalMessageFactory.MessageType.POI_MODIFY_BASE,
                     InternalMessageFactory.MessageType.POI_MODIFY_CORE})
     private String enterpriseName;
     // 经度
-    @DataServiceUnit(dataProviderUnit = "EnterpriseDataProviderUnit",
+    @ItemProviderUnit(dataProviderUnit = "EnterpriseDataRepertoryUnit",
             relatedMessageType = {InternalMessageFactory.MessageType.POI_CREATE,
                     InternalMessageFactory.MessageType.POI_CREATE_V2,
                     InternalMessageFactory.MessageType.POI_MODIFY_BASE,
                     InternalMessageFactory.MessageType.POI_MODIFY_CORE})
     private Double longitude;
     // 纬度
-    @DataServiceUnit(dataProviderUnit = "EnterpriseDataProviderUnit",
+    @ItemProviderUnit(dataProviderUnit = "EnterpriseDataRepertoryUnit",
             relatedMessageType = {InternalMessageFactory.MessageType.POI_CREATE,
                     InternalMessageFactory.MessageType.POI_CREATE_V2,
                     InternalMessageFactory.MessageType.POI_MODIFY_BASE,
                     InternalMessageFactory.MessageType.POI_MODIFY_CORE})
     private Double latitude;
     // 所在城市
-    @DataServiceUnit(dataProviderUnit = "EnterpriseDataProviderUnit",
+    @ItemProviderUnit(dataProviderUnit = "EnterpriseDataRepertoryUnit",
             relatedMessageType = {InternalMessageFactory.MessageType.POI_CREATE,
                     InternalMessageFactory.MessageType.POI_CREATE_V2,
                     InternalMessageFactory.MessageType.POI_MODIFY_BASE,
                     InternalMessageFactory.MessageType.POI_MODIFY_CORE})
     private String cityName;
     // 行政区
-    @DataServiceUnit(dataProviderUnit = "EnterpriseDataProviderUnit",
+    @ItemProviderUnit(dataProviderUnit = "EnterpriseDataRepertoryUnit",
             relatedMessageType = {InternalMessageFactory.MessageType.POI_CREATE,
                     InternalMessageFactory.MessageType.POI_CREATE_V2,
                     InternalMessageFactory.MessageType.POI_MODIFY_BASE,
                     InternalMessageFactory.MessageType.POI_MODIFY_CORE})
     private String districtName;
     //企业地址
-    @DataServiceUnit(dataProviderUnit = "EnterpriseDataProviderUnit",
+    @ItemProviderUnit(dataProviderUnit = "EnterpriseDataRepertoryUnit",
             relatedMessageType = {InternalMessageFactory.MessageType.POI_CREATE,
                     InternalMessageFactory.MessageType.POI_CREATE_V2,
                     InternalMessageFactory.MessageType.POI_MODIFY_BASE,
                     InternalMessageFactory.MessageType.POI_MODIFY_CORE})
     private String address;
     //企业电话
-    @DataServiceUnit(dataProviderUnit = "EnterpriseDataProviderUnit",
+    @ItemProviderUnit(dataProviderUnit = "EnterpriseDataRepertoryUnit",
             relatedMessageType = {InternalMessageFactory.MessageType.POI_CREATE,
                     InternalMessageFactory.MessageType.POI_CREATE_V2,
                     InternalMessageFactory.MessageType.POI_MODIFY_BASE,
                     InternalMessageFactory.MessageType.POI_MODIFY_CORE})
     private String phone;
     // 经营品类
-    @DataServiceUnit(dataProviderUnit = "EnterpriseDataProviderUnit",
+    @ItemProviderUnit(dataProviderUnit = "EnterpriseDataRepertoryUnit",
             relatedMessageType = {InternalMessageFactory.MessageType.POI_CREATE,
                     InternalMessageFactory.MessageType.POI_CREATE_V2,
                     InternalMessageFactory.MessageType.POI_MODIFY_BASE,

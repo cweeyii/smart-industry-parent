@@ -18,11 +18,10 @@ import java.util.Map;
  * Time: 上午10:57
  * To change this template use File | Settings | File Templates.
  */
-public abstract class AbstractDataReader<K,V> implements IDataReader<K,V> {
+public abstract class AbstractDataReader<K,V> {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AbstractDataReader.class);
 
-    @Override
     public Map<K,V> get(List<K> keys, List<String> fields, Class<?> object){
         List<String> effectiveFields = preProcess(fields, object);
         if (CollectionUtils.isEmpty(effectiveFields)){

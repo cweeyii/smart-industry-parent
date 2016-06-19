@@ -12,7 +12,7 @@ import java.util.*;
 
 
 @Service
-public class MapCacheDataService<K, V> extends MedisCacheDataService<K, V> {
+public class MapCacheDataService<K, V> extends RedisCacheDataService<K, V> {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MapCacheDataService.class);
 

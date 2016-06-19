@@ -21,7 +21,7 @@ import java.util.Map;
  * To change this template use File | Settings | File Templates.
  */
 @Service
-public class ObjectCacheDataService<K, V> extends MedisCacheDataService<K, V> {
+public class ObjectCacheDataService<K, V> extends RedisCacheDataService<K, V> {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MapCacheDataService.class);
 
