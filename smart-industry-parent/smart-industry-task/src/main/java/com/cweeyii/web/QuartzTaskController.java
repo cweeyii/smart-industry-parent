@@ -1,8 +1,4 @@
-/*
- * Copyright (c) 2010-2011 meituan.com
- * All rights reserved.
- * 
- */
+
 package com.cweeyii.web;
 
 import com.alibaba.fastjson.JSON;
@@ -15,7 +11,7 @@ import com.cweeyii.quartz.framework.vo.JobNameInfo;
 import com.cweeyii.quartz.framework.vo.TriggerInfo;
 import com.cweeyii.quartz.framework.vo.TriggerNameInfo;
 import com.cweeyii.util.DateUtil;
-import com.cweeyii.util.PoiUtil;
+import com.cweeyii.util.EnterpriseUtil;
 import org.apache.commons.lang.StringUtils;
 import org.quartz.UnableToInterruptJobException;
 import org.slf4j.Logger;
@@ -41,43 +37,6 @@ public class QuartzTaskController {
     private QuartzJobOperator quartzJobOperator;
 
     private static final Logger LOGGER = LoggerFactory.getLogger(QuartzTaskController.class);
-
-
-    /*
-    ====================================================================================
-    jobName=addressClearJobDetail
-    triggerName=associateMenuFrontImgJobCronTrigger
-    ====================================================================================
-    表：QRTZ_CRON_TRIGGERS
-    SCHED_NAME: quartzScheduler
-    TRIGGER_NAME: advertisersPoiAutoProcessJobCronTrigger
-    TRIGGER_GROUP: DEFAULT
-    CRON_EXPRESSION: 0 0 4 * * ?
-    TIME_ZONE_ID: GMT+08:00
-
-    表：QRTZ_JOB_DETAILS
-    SCHED_NAME: quartzScheduler
-    JOB_NAME: addressClearJobDetail
-    JOB_GROUP: DEFAULT
-    DESCRIPTION: 地址规范化--地址清洗任务
-    JOB_CLASS_NAME: com.sankuai.meituan.poiop.quartz.job.timing.accurate.AddressClearJob
-    IS_DURABLE: 1
-    IS_NONCONCURRENT: 1
-    IS_UPDATE_DATA: 0
-    REQUESTS_RECOVERY: 1
-    JOB_DATA: ¬í sr org.quartz.JobDataMap°迩°Ë  xr &org.quartz.utils.StringKeyDirtyFlagMapèÃûÅ]( Z allowsTransientDataxr org.quartz.utils.DirtyFlagMapæ.­(v
-    Î Z dirtyL mapt Ljava/util/Map;xp sr java.util.HashMapÚÁÃ`Ñ F
-    loadFactorI 	thresholdxp?@            x
-
-    表：QRTZ_JOB_RESULT
-    id: 794161
-    job_name: timeoutClearForBJobDetail
-    trigger_name: timeoutClearForBJobCronTrigger
-    start_time: 1456578720013
-    result: 1
-    end_time: 1456578720018
-    host_name: dx-mdc-poi-task03.dx.sankuai.com
-    */
 
 
     /**
@@ -158,23 +117,23 @@ public class QuartzTaskController {
         resultJSONObject.put("id", result.getId());
         resultJSONObject.put("jobName", result.getJobName());
         resultJSONObject.put("triggerName", result.getTriggerName());
-        if (result.getStartTime() == null || result.getStartTime() == 0L)
+        if (result.getStartTime() == null || result.getStartTime() == null)
             resultJSONObject.put("StartTime", "");
         else {
-            String dateTime= DateUtil.Date2String(DateUtil.fromUnixTime((int) (result.getStartTime() / 1000L)), DateUtil.DefaultLongFormat);
+            String dateTime= DateUtil.Date2String(result.getStartTime(), DateUtil.DefaultLongFormat);
             resultJSONObject.put("StartTime", dateTime);
             //resultJSONObject.put("StartTime", parseLongDate2String(result.getStartTime()));
         }
-        if (result.getEndTime() == null || result.getEndTime() == 0L)
+        if (result.getEndTime() == null || result.getEndTime() == null)
             resultJSONObject.put("endTime", "");
         else {
-           String dateTime=DateUtil.Date2String(DateUtil.fromUnixTime((int) (result.getEndTime() / 1000L)), DateUtil.DefaultLongFormat);
+           String dateTime=DateUtil.Date2String(result.getEndTime(), DateUtil.DefaultLongFormat);
            resultJSONObject.put("endTime", dateTime);
             //resultJSONObject.put("endTime", parseLongDate2String(result.getEndTime()));
         }
 
-        if (result.getStartTime() != 0 && result.getEndTime() != 0) {
-            resultJSONObject.put("runTime",Long.toString((result.getEndTime() - result.getStartTime())/1000));
+        if (result.getStartTime() != null && result.getEndTime() != null) {
+            resultJSONObject.put("runTime",Long.toString((result.getEndTime().getTime() - result.getStartTime().getTime())/1000));
         } else {
             resultJSONObject.put("runTime", "");
         }
@@ -216,7 +175,7 @@ public class QuartzTaskController {
     public
     @ResponseBody
     Map<String, Object> startJob(HttpServletRequest request) throws IOException {
-        String content = PoiUtil.read(request.getReader(), request.getContentLength());
+        String content = EnterpriseUtil.read(request.getReader(), request.getContentLength());
         JSONObject jsonObject = JSON.parseObject(content);
         String jobName = jsonObject.getString("jobName");
         if (StringUtils.isEmpty(jobName)) {

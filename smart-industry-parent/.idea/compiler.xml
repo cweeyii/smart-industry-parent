@@ -32,7 +32,7 @@
         <module name="smart-industry-task" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="smart-industry-biz" target="1.7" />
       <module name="smart-industry-parent" target="1.5" />
       <module name="smart-industry-task" target="1.7" />

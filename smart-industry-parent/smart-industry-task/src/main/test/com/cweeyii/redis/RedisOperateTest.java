@@ -1,4 +1,4 @@
-package com.cweeyii.redis;
+package com.cweeyii.cache.redis;
 
 import com.alibaba.fastjson.JSON;
 import junit.framework.TestCase;

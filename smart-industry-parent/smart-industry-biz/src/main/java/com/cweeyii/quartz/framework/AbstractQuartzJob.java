@@ -1,11 +1,16 @@
 package com.cweeyii.quartz.framework;
 
+import java.io.Serializable;
+import java.net.InetAddress;
+import java.util.List;
+import javax.annotation.Resource;
 
 import com.cweeyii.quartz.framework.dao.mapper.QRTZJobResultMapper;
 import com.cweeyii.quartz.framework.domain.QRTZJobResult;
-import com.cweeyii.quartz.framework.vo.ArgsJobExecutionContext;
-import com.cweeyii.util.*;
-import org.apache.commons.lang.exception.ExceptionUtils;
+import com.cweeyii.util.DateUtil;
+import com.cweeyii.util.EnterpriseUtil;
+import com.cweeyii.util.SpringBeanUtil;
+import com.cweeyii.util.StringUtil;
 import org.quartz.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,19 +24,9 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.scheduling.quartz.JobDetailFactoryBean;
 import org.springframework.util.CollectionUtils;
 
-import javax.annotation.Resource;
-import java.io.Serializable;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
-/**
- * Created by wenyi on 16/2/27.
- * Email:caowenyi@meituan.com
- */
-
-public abstract class AbstractQuartzJob implements Job, Serializable, BeanNameAware, InitializingBean, DisposableBean, ApplicationContextAware, InterruptableJob {
+@DisallowConcurrentExecution//加这个参数主要是同一时间只运行同一个任务
+public abstract class AbstractQuartzJob implements Job, Serializable,BeanNameAware, InitializingBean,DisposableBean,ApplicationContextAware,InterruptableJob{
 
     protected ApplicationContext applicationContext;
 
@@ -48,13 +43,13 @@ public abstract class AbstractQuartzJob implements Job, Serializable, BeanNameAw
     @Resource
     private QRTZJobResultMapper qRTZJobResultMapper;
 
-    private final static Logger LOGGER = LoggerFactory.getLogger(AbstractQuartzJob.class);
+    private  Logger logger = LoggerFactory.getLogger(this.getClass());
 
     //
     //private static final Integer[] MDC_RD_IDS = new Integer[]{21273,29290,31802,37775,29908,38999,32495};
 
     //fancong 2015/04/14 add
-    public String getBeanName() {
+    public String getBeanName(){
         return beanName;
     }
     //end add
@@ -64,100 +59,65 @@ public abstract class AbstractQuartzJob implements Job, Serializable, BeanNameAw
     private static final long serialVersionUID = 1L;
 
     //定义抽象方法，供子类实现
-    public abstract void action(JobExecutionContext context) throws Exception;
+    protected abstract void action(JobExecutionContext context) throws Exception;
 
     protected abstract String getDescription();
 
-    protected void afterJobInitialized() {
-        //do nothing defaut
-    }
-
-    /**
-     * 是否记录日志
-     */
-    protected boolean logToDB() {
-        return true;
-    }
-
-    /**
-     * 获取quartz传递的参数
-     *
-     * @return
-     */
-    protected String getParam(JobExecutionContext context) {
-        if (context == null) {
-            return null;
-        }
-        if (context instanceof ArgsJobExecutionContext) {
-            return (String) context.get("param");
-        }
-        JobDataMap jobDataMap = context.getMergedJobDataMap();
-        return jobDataMap == null ? null : jobDataMap.getString("param");
-    }
 
     @Override
     public void execute(JobExecutionContext context) throws JobExecutionException {
         thisThread = Thread.currentThread();
-        if (context != null && !(context instanceof ArgsJobExecutionContext)) {
+        if (context != null) {
             QRTZJobResult result = new QRTZJobResult();
             this.result = result;
             JobDetail jobDetail = context.getJobDetail();
             String jobName = jobDetail.getKey().getName();
             AbstractQuartzJob job = (AbstractQuartzJob) SpringBeanUtil.getBean(jobDetail.getJobClass());
             try {
-                String hostName = ServerUtil.getHostName();
+                String hostName = InetAddress.getLocalHost().getHostName();
                 long start = System.currentTimeMillis();
                 Trigger trigger = context.getTrigger();
-                result.setStartTime(start);
+                result.setStartTime(DateUtil.nowDateTime());
                 result.setTriggerName(trigger.getKey().getName());
                 result.setJobName(jobName);
                 result.setHostName(hostName);
-                PoiUtil.setDefault(result);
-                LOGGER.info("定时任务启动[" + result + "]");
-                if (logToDB()) {
-                    //得到最近的执行日志，如果是0，怎么则变成3
-                    this.qRTZJobResultMapper = job.getqRTZJobResultMapper();
-                    List<QRTZJobResult> lastestResults = job.getqRTZJobResultMapper().findLatestResultsByJobName(jobName, 1);
-                    if (!CollectionUtils.isEmpty(lastestResults)) {
-                        QRTZJobResult lastestResult = lastestResults.get(0);
-                        if (lastestResult.getResult().intValue() == 0) {
-                            lastestResult.setResult(3);
-                            lastestResult.setEndTime(System.currentTimeMillis());
-                            job.getqRTZJobResultMapper().update(lastestResult);
-                        }
+                EnterpriseUtil.setDefault(result);
+                logger.info("定时任务启动[" + result + "]");
+
+                //得到最近的执行日志，如果是0，怎么则变成3
+                this.qRTZJobResultMapper = job.getqRTZJobResultMapper();
+                List<QRTZJobResult> lastestResults = job.getqRTZJobResultMapper().findLatestResultsByJobName(jobName,1);
+                if (!CollectionUtils.isEmpty(lastestResults)) {
+                    QRTZJobResult lastestResult = lastestResults.get(0);
+                    if (lastestResult.getResult()== 0) {
+                        lastestResult.setResult(3);
+                        lastestResult.setEndTime(DateUtil.nowDateTime());
+                        job.getqRTZJobResultMapper().update(lastestResult);
                     }
-                    job.getqRTZJobResultMapper().insert(result);
                 }
+                job.getqRTZJobResultMapper().insert(result);
                 job.action(context);
                 long end = System.currentTimeMillis();
-                result.setEndTime(end);
+                result.setEndTime(DateUtil.nowDateTime());
                 StringBuilder buffer = new StringBuilder();
-                buffer.append(jobDetail.getDescription() + "(" + jobDetail.getKey() + ")").append("执行完成 , 耗时: ").append((end - start)).append(" ms");
-                LOGGER.info(buffer.toString());
+                buffer.append(jobDetail.getDescription()).append("(").append(jobDetail.getKey()).append(")").append("执行完成 , 耗时: ").append((end - start)).append(" ms");
+                logger.info(buffer.toString());
                 result.setResult(1);
             } catch (Exception e) {
-                result.setEndTime(System.currentTimeMillis());
+                result.setEndTime(DateUtil.nowDateTime());
                 if (interruptFlg) {
                     result.setResult(3);
-                    LOGGER.error("定时任务人为中断[result = " + result + "]", e);
+                    logger.error("定时任务人为中断[result = " + result + "]",e);
                 } else {
                     result.setResult(2);
-                    LOGGER.error("定时任务异常中断[result = " + result + "]", e);
-                    doResolveException(e, context);
+                    logger.error("定时任务异常中断[result = " + result + "]", e);
                 }
-            } finally {
+            } finally{
                 try {
-                    PoiUtil.setDefault(result);
-                    if (logToDB()) {
-                        job.getqRTZJobResultMapper().update(result);
-                        //QRTZJobResult i=job.getqRTZJobResultMapper().select();
-                        // List<QRTZJobResult> res=job.getqRTZJobResultMapper().select();
-                        //System.out.print(res.get(0).getId());
-                    } else {
-                        LOGGER.info(result.toString());
-                    }
-                } catch (Exception e) {
-                    LOGGER.error("定时任务出现异常[result = " + result + "]", e);
+                    EnterpriseUtil.setDefault(result);
+                    job.getqRTZJobResultMapper().update(result);
+                } catch(Exception e) {
+                    logger.error("定时任务出现异常[result = " + result + "]",e);
                 }
             }
         } else {
@@ -165,42 +125,11 @@ public abstract class AbstractQuartzJob implements Job, Serializable, BeanNameAw
                 this.action(context);
             } catch (Exception e) {
                 //发送邮件
-                doResolveException(e, context);
-                LOGGER.error("定时任务出现异常", e);
+                logger.error("定时任务出现异常", e);
             }
         }
     }
 
-    private void doResolveException(Throwable e, JobExecutionContext context) {
-        //线下不发送报警
-        String environment = System.getProperty("environment");
-        if (!"online".equals(environment)) {
-            LOGGER.error("线下环境不发送报警[environment=" + environment + "]");
-            return;
-        }
-        try {
-            String jobName = this.getClass().getSimpleName();
-            String stackTrace = ExceptionUtils.getStackTrace(e);
-            Map<String, Object> data = new HashMap<>();
-            data.put("jobName", jobName);
-            data.put("stackTrace", stackTrace);
-            data.put("time", DateUtil.Date2StringSec(new Date()));
-            data.put("hostname", ServerUtil.getHostName());
-            data.put("message", e.getMessage());
-            if (!(context instanceof ArgsJobExecutionContext) && context != null) {
-                JobDetail jobDetail = context.getJobDetail();
-                Trigger trigger = context.getTrigger();
-                data.put("description", jobDetail.getDescription());
-                data.put("jobDetail", jobDetail.getKey().toString());
-                data.put("trigger", trigger.getKey().toString());
-            }
-            LOGGER.error(data.toString());
-        } catch (Exception e2) {
-            LOGGER.error("发送定时任务失败通知失败", e2);
-        }
-
-
-    }
 
     private QRTZJobResultMapper getqRTZJobResultMapper() {
         return qRTZJobResultMapper;
@@ -219,7 +148,7 @@ public abstract class AbstractQuartzJob implements Job, Serializable, BeanNameAw
         String description = getDescription();
         if (StringUtil.isBlank(description)) {
             throw new IllegalArgumentException("[class=" + this.getClass().getName() + "]description不能为空");
-            //LOGGER.error("["+this.getClass().getSimpleName()+"]没有定义description");
+            //logger.error("["+this.getClass().getSimpleName()+"]没有定义description");
         }
         AutowireCapableBeanFactory autowireCapableBeanFactory = applicationContext.getAutowireCapableBeanFactory();
         String jobDetailName = beanName + "Detail";
@@ -232,7 +161,6 @@ public abstract class AbstractQuartzJob implements Job, Serializable, BeanNameAw
         autowireCapableBeanFactory.autowireBean(jobFactoryBean);
         autowireCapableBeanFactory.initializeBean(jobFactoryBean, jobDetailName + "Factory");
         jobDetail = jobFactoryBean.getObject();
-        afterJobInitialized();
     }
 
     @Override
@@ -242,12 +170,7 @@ public abstract class AbstractQuartzJob implements Job, Serializable, BeanNameAw
 
     }
 
-//	@Override
-//	 protected  void execute() throws Throwable {
-//		action(null);
-//	 }
-
-    public JobDetail getJobDetail() {
+    public JobDetail getJobDetail(){
         return jobDetail;
     }
 
@@ -260,10 +183,9 @@ public abstract class AbstractQuartzJob implements Job, Serializable, BeanNameAw
     public void interrupt() throws UnableToInterruptJobException {
         stopThread();
         if (thisThread != null && result != null) {
-            result.setEndTime(System.currentTimeMillis());
+            result.setEndTime(DateUtil.nowDateTime());
             result.setResult(3);
             qRTZJobResultMapper.update(result);
-            String jobName = result.getJobName();
             result = null;
         }
     }
@@ -276,4 +198,3 @@ public abstract class AbstractQuartzJob implements Job, Serializable, BeanNameAw
     }
 
 }
-

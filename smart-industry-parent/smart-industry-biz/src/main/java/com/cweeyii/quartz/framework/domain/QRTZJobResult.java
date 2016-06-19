@@ -1,5 +1,7 @@
 package com.cweeyii.quartz.framework.domain;
 
+import java.util.Date;
+
 /**
  * Created by wenyi on 16/2/27.
  * Email:caowenyi@meituan.com
@@ -12,9 +14,9 @@ public class QRTZJobResult {
 
     private String triggerName;
 
-    private Long startTime;
+    private Date startTime;
 
-    private Long endTime;
+    private Date endTime;
 
     //0执行中 1成功 2异常 3被中断
     private Integer result;
@@ -45,19 +47,19 @@ public class QRTZJobResult {
         this.triggerName = triggerName;
     }
 
-    public Long getStartTime() {
+    public Date getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(Long startTime) {
+    public void setStartTime(Date startTime) {
         this.startTime = startTime;
     }
 
-    public Long getEndTime() {
+    public Date getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(Long endTime) {
+    public void setEndTime(Date endTime) {
         this.endTime = endTime;
     }
 

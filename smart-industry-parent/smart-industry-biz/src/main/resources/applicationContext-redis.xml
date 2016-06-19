@@ -15,15 +15,9 @@
         <property name="testOnReturn" value="${redis.testOnReturn}"/>
     </bean>
 
-    <bean id="sharedJedisPool" class="redis.clients.jedis.ShardedJedisPool">
+    <bean id="jedisPool" class="redis.clients.jedis.JedisPool">
         <constructor-arg index="0" ref="poolConfig"/>
-        <constructor-arg index="1">
-            <list>
-                <bean class="redis.clients.jedis.JedisShardInfo">
-                    <constructor-arg name="host" value="${redis.host}"/>
-                    <constructor-arg name="port" value="${redis.port}"/>
-                </bean>
-            </list>
-        </constructor-arg>
+        <constructor-arg index="1" name="host" value="${redis.host}"/>
+        <constructor-arg index="2" name="port" value="${redis.port}"/>
     </bean>
 </beans>

@@ -8,9 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 public class DateUtil {
-    public static final String DefaultShortFormat = "yyyy-MM-dd";
     public static final String DefaultLongFormat = "yyyy-MM-dd HH:mm:ss";
-    public static final String DefaultMinuteFormat = "yyyy-MM-dd HH:mm";
 
     public DateUtil() {
     }
@@ -41,7 +39,7 @@ public class DateUtil {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         str = StringUtil.null2Trim(str);
         String matchstr = "[0-2]\\d\\d\\d-\\d\\d-\\d\\d [0-2]\\d:[0-6]\\d";
-        if(StringUtil.regexMatch(str, matchstr)) {
+        if (StringUtil.regexMatch(str, matchstr)) {
             str = str + ":00";
         }
 
@@ -127,11 +125,15 @@ public class DateUtil {
     }
 
     public static int unixTime() {
-        return (int)(System.currentTimeMillis() / 1000L);
+        return (int) (System.currentTimeMillis() / 1000L);
+    }
+
+    public static Date nowDateTime() {
+        return fromUnixTime(unixTime());
     }
 
     public static Date fromUnixTime(Integer seconds) {
-        return new Date((long)seconds.intValue() * 1000L);
+        return new Date((long) seconds.intValue() * 1000L);
     }
 
     public static Date today() {
@@ -165,7 +167,7 @@ public class DateUtil {
         long day = (endDate.getTime() - startDate.getTime()) / 86400000L;
         Calendar cal = Calendar.getInstance();
 
-        for(int i = 0; (long)i <= day; ++i) {
+        for (int i = 0; (long) i <= day; ++i) {
             cal.setTime(startDate);
             cal.add(5, i);
             dateList.add(Date2String(cal.getTime()));
@@ -213,38 +215,38 @@ public class DateUtil {
         int dayOfWeek = cal.get(7);
         boolean rel = false;
         byte rel1;
-        switch(dayOfWeek) {
-        case 2:
-            rel1 = 1;
-            break;
-        case 3:
-            rel1 = 2;
-            break;
-        case 4:
-            rel1 = 3;
-            break;
-        case 5:
-            rel1 = 4;
-            break;
-        case 6:
-            rel1 = 5;
-            break;
-        case 7:
-            rel1 = 6;
-            break;
-        default:
-            rel1 = 7;
+        switch (dayOfWeek) {
+            case 2:
+                rel1 = 1;
+                break;
+            case 3:
+                rel1 = 2;
+                break;
+            case 4:
+                rel1 = 3;
+                break;
+            case 5:
+                rel1 = 4;
+                break;
+            case 6:
+                rel1 = 5;
+                break;
+            case 7:
+                rel1 = 6;
+                break;
+            default:
+                rel1 = 7;
         }
 
         return rel1;
     }
 
     public static int day2Unixtime(String day) {
-        return (int)(string2DateDay(day).getTime() / 1000L);
+        return (int) (string2DateDay(day).getTime() / 1000L);
     }
 
     public static int date2Unixtime(Date date) {
-        return (int)(date.getTime() / 1000L);
+        return (int) (date.getTime() / 1000L);
     }
 
     public static Date toTime(Date date) {

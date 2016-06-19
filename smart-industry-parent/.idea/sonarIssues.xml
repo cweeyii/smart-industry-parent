@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-api/src/main/resources/applicationContext-task.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-biz/src/main/java/com/sankuai/meituan/poiop/cache/AbstractDataReader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-biz/src/main/java/com/sankuai/meituan/poiop/cache/CacheCoreSelector.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-biz/src/main/java/com/sankuai/meituan/poiop/cache/IDataReader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-biz/src/main/java/com/sankuai/meituan/poiop/cache/MapCacheDataService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-biz/src/main/java/com/sankuai/meituan/poiop/cache/MedisCacheDataService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-biz/src/main/java/com/sankuai/meituan/poiop/cache/ObjectCacheDataService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-biz/src/main/java/com/sankuai/meituan/poiop/cache/constrant/FieldType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-biz/src/main/java/com/sankuai/meituan/poiop/framework/task/TaskGroup.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-biz/src/main/java/com/sankuai/meituan/poiop/persistence/annotation/Column.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-biz/src/main/java/com/sankuai/meituan/poiop/persistence/annotation/Table.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-biz/src/main/java/com/sankuai/meituan/poiop/persistence/util/PersistenceUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-biz/src/main/java/com/sankuai/meituan/poiop/persistence/vo/Human.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-biz/src/main/java/com/sankuai/meituan/poiop/persistence/vo/User.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-biz/src/main/java/com/sankuai/meituan/poiop/swtich/PersistenceSwitch.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-biz/src/test/java/com/sankuai/meituan/poiop/PersistenceUtilTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-mq/src/main/java/com/sankuai/meituan/poiop/mq/listener/internal/PoiInternalListener.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/bgc/BgcDailyMonitorJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/bgc/ConsistencyDailyDiffTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/bgc/SubversiveFeedBackJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/bgc/SubversiveFeedBackJobV2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/bgc/TmpBgcAccurateTestJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/bgc/TmpConsistencyEvaluateJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/RefreshAllFrontImgCacheJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/accurate/AddressClearJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/accurate/AddressClearStrategyTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/accurate/AutoAccurateMonthReportJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/accurate/AutoAccurateWeekReportJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/accurate/CategoryPhoneInitJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/accurate/CategoryThirdPartyPhoneCallJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/accurate/CinemaAccurateJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/img/RefreshInputCategoryFrontImgCacheJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/img/TmpBatchRollbackFrontImgJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/img/TmpCoverageReportJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/img/TmpDeleteDealImgJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/img/TmpFixBugBlackListJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/img/TmpFrontImgCoverageReportJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/img/TmpImgDistributeJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/img/TmpImgNoneTypeJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/img/TmpImgProcessReportJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/img/TmpImgSourceReportJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/timing/img/TmpInsertCategoryFrontImgJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/DailyHiveilleagalPoiMonitor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/DailyilleagalPoiMonitorByPage.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/TmpCloseImportTaskJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/TmpCompAccurateCompJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/TmpDataClearBracketJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/TmpDataRecoveryJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/TmpDpCoverageMtJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/TmpDpTuanDiffJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/TmpGarbageClassifyJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/TmpRecoveryDistrictJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/TmpSendMessageCityIdJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/TmpSendMessageForLocationJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/TmpTypesPoiLockJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/accurate/DailyModifyUserPhoneJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/accurate/DailyUGCReportJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/accurate/ReDoPoiPhoneJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/accurate/TmpCleanDiscardCategoryV2Job.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/accurate/TmpCleanNoneLeafCategoryPoiJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mtpoiop_parent/mtpoiop-task/src/main/java/com/sankuai/meituan/poiop/quartz/job/tmp/accurate/TmpDirectAccurateFeedBackStatisJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/baseinfo/core/dao/mapper/EnterpriseBasicInfoMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/baseinfo/core/dao/mapper/impl/EnterpriseBasicInfoMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/baseinfo/core/domain/EnterpriseBasicInfo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/baseinfo/core/service/EnterpriseBasicInfoService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/baseinfo/core/service/StagePoiService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/baseinfo/core/service/UtilService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/baseinfo/core/service/impl/EnterpriseBasicInfoServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/baseinfo/core/service/impl/StagePoiServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/baseinfo/core/service/impl/UtilServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/AbstractDataReader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/DBDataReader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/MapCacheDataService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/MedisCacheDataService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/ObjectCacheDataService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/annotation/DataServiceUnit.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/IDataReader.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/MapCacheDataService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/MedisCacheDataService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/ObjectCacheDataService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/annotation/BaseDataProvider.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/annotation/CacheEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/manager/DataProviderManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/provider/AbstractDataProviderUnit.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/provider/EnterpriseDataProviderUnit.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/redis/impl/Medis2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/redis/impl/SmartRedisImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/vo/EnterpriseObjectView.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/vo/EnterpriseRichnessView.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/manager/DataProviderManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/provider/AbstractPoiDataProvierUnit.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/provider/EnterpriseDataProviderUnit.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/provider/EnterpriseProviderUnit.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/provider/PoiBaseDataProviderUnit.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/serialize/BeanUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/serialize/SerializeUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/util/CollectionUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/vo/EnterpriseRichnessView.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/vo/StagePoiView.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/elasticsearch/framework/annotation/ESParams.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/elasticsearch/framework/annotation/ElasticParam.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/elasticsearch/framework/annotation/ElasticSearchParam.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/elasticsearch/framework/client/ESClientConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/elasticsearch/framework/index/ESIndex.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/elasticsearch/framework/index/EnterpriseESIndex.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/elasticsearch/framework/vo/EnterpriseIndexView.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/elasticsearch/framework/vo/EnterpriseIndexVo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/gis/service/GisUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/index/ESIndex.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/quartz/framework/AbstractQuartzJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/quartz/framework/ClusteredSchedulerFactoryBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/quartz/framework/dao/mapper/impl/QRTZJobResultMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/quartz/framework/domain/QRTZJobResult.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/quartz/framework/manger/QuartzTaskManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/rabbitmq/vo/InternalMessageFactory.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/redis/IMedis.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/redis/impl/Medis2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/redis/iterator/ScanIterator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/thread/framework/TaskGroup.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/thread/framework/TaskPoolExecutor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/thread/framework/TaskPoolExecutorFactory.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/thread/local/ThreadCache.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/util/DateUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/util/EnterpriseUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/util/PoiUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/util/ServerUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/web/interceptor/DefaultInterceptor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/resources/applicationContext-datasource.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/resources/applicationContext-framework.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/resources/applicationContext-redis.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/resources/database.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/quartz/job/cache/FirstCahceRefreshJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/quartz/job/database/TransferDataJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/quartz/job/elasticsearch/FirstElasticSearchJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/quartz/job/mq/FirstRabbitMqJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/quartz/job/redis/FirstRedisJob.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/web/QuartzTaskController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/web/StartJobController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/resources/webmvc-config.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.regexp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

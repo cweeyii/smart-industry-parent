@@ -16,5 +16,9 @@
                 <property name="mappingURL" value=".*"/>
             </bean>
         </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.cweeyii.web.interceptor.DefaultInterceptor"/>
+        </mvc:interceptor>
     </mvc:interceptors>
 </beans>

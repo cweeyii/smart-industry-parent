@@ -6,9 +6,9 @@
         <id column="id" property="id" jdbcType="INTEGER" />
         <result column="job_name" property="jobName" jdbcType="VARCHAR" />
         <result column="trigger_name" property="triggerName" jdbcType="VARCHAR" />
-        <result column="start_time" property="startTime" jdbcType="BIGINT" />
+        <result column="start_time" property="startTime" jdbcType="TIMESTAMP" />
         <result column="result" property="result" jdbcType="INTEGER" />
-        <result column="end_time" property="endTime" jdbcType="BIGINT" />
+        <result column="end_time" property="endTime" jdbcType="TIMESTAMP" />
         <result column="host_name" property="hostName" jdbcType="VARCHAR" />
   </resultMap>
 

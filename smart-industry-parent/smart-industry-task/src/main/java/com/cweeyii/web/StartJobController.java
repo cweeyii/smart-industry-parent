@@ -1,7 +1,6 @@
 package com.cweeyii.web;
 
 import com.cweeyii.quartz.framework.AbstractQuartzJob;
-import com.cweeyii.quartz.framework.vo.ArgsJobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,34 +21,31 @@ public class StartJobController {
     @Resource
     private List<AbstractQuartzJob> jobs;
 
-    private static final Set<String> runnings = new HashSet<String>();
+    private static final Set<String> runnings = new HashSet<>();
 
-    private final static Logger logger = LoggerFactory.getLogger(StartJobController.class);
+    private final static Logger LOGGER = LoggerFactory.getLogger(StartJobController.class);
 
     @RequestMapping(value = "")
     public
     @ResponseBody
-    String startJob(final String jobName, final String params) {
+    String startJob(final String jobName) {
 
         for (final AbstractQuartzJob job : jobs) {
             if (job.getBeanName().toLowerCase().equals(jobName.toLowerCase())) {
                 synchronized (this) {
                     if (runnings.contains(jobName)) {
-                        logger.info("task is running");
+                        LOGGER.info("task is running");
                         return "task is running";
                     }
                     runnings.add(jobName);
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
-                            logger.info(Thread.currentThread() + " jobName : " + jobName + "开始运行");
+                            LOGGER.info(Thread.currentThread() + " jobName : " + jobName + "开始运行");
                             try {
-                                Map<String,String> args = new HashMap<>();
-                                args.put("param", params);
-                                ArgsJobExecutionContext ctx = new ArgsJobExecutionContext(args);
-                                job.execute(ctx);
+                                job.execute(null);
                             } catch (JobExecutionException e) {
-                                logger.error("运行任务出错", e);
+                                LOGGER.error("运行任务出错", e);
                             } finally {
                                 runnings.remove(jobName);
                             }
