@@ -20,5 +20,7 @@ public interface EnterpriseBasicInfoService {
     List<EnterpriseBasicInfo> findByIds(List<Long> ids);
 
     Map<Long, EnterpriseBasicInfo> findMapByIds(List<Long> unCachedIds);
+
+    List<EnterpriseBasicInfo> findByPage(Long offset, Integer limit);
 }
 

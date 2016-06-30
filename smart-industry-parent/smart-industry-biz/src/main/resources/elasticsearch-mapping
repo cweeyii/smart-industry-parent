@@ -1,0 +1,60 @@
+curl -XPUT http://localhost:9200/elasticsearch.enterprise.index
+curl -XPOST http://localhost:9200/elasticsearch.enterprise.index/enterprise_basic_info/_mapping -d'
+{
+    "enterprise_basic_info": {
+             "_all": {
+            "analyzer": "mmseg_maxword",
+            "search_analyzer": "mmseg_maxword",
+            "term_vector": "no",
+            "store": "false"
+        },
+        "properties": {
+            "id":{
+                "type":"long",
+                "store":"yes"
+            },
+           "enterpriseName":{
+                "type":"string",
+                "store":"yes",
+                "index":"not_analyzed"
+            },
+           "longitude":{
+                "type":"double",
+                "store":"yes"
+            },
+           "latitude":{
+                "type":"double",
+                "store":"yes"
+            },
+            "cityName":{
+                "type":"string",
+                "store":"yes",
+                "index":"not_analyzed"
+            },
+            "districtName":{
+                "type":"string",
+                "store":"yes",
+                "index":"not_analyzed"
+            },
+            "address": {
+                "type": "string",
+                "store": "yes",
+                "term_vector": "with_positions_offsets",
+                "analyzer": "mmseg_maxword",
+                "search_analyzer": "mmseg_maxword",
+                "include_in_all": "true",
+                "boost": 8
+            },
+            "phone": {
+                "type": "string",
+                "store": "yes",
+                "index":"not_analyzed"
+            },
+            "businessCategory": {
+                "type": "string",
+                "store": "yes",
+                "index":"not_analyzed"
+            }
+        }
+    }
+}'

@@ -51,5 +51,10 @@ public class EnterpriseBasicInfoServiceImpl implements EnterpriseBasicInfoServic
         return enterpriseBasicInfoMap;
     }
 
+    @Override
+    public List<EnterpriseBasicInfo> findByPage(Long offset, Integer limit) {
+        return enterpriseBasicInfoMapper.findByPage(offset,limit);
+    }
+
 }
 
