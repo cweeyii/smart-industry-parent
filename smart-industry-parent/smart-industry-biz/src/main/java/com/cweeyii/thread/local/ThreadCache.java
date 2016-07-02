@@ -1,5 +1,8 @@
 package com.cweeyii.thread.local;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by wenyi on 16/6/12.
  * Email:caowenyi@meituan.com
@@ -16,6 +19,7 @@ public class ThreadCache {
         long startTime;
         String uri;
         long costTime;
+        Map<String,Object> map=new HashMap<>();
     }
 
     public static void setIp(String ip) {
@@ -48,5 +52,15 @@ public class ThreadCache {
 
     public static Long getCostTime() {
         return cache.get().costTime;
+    }
+
+    public static void setLocalObject(String name,Object obj){
+        if(cache.get().map.get(name)!=null)
+            throw new IllegalArgumentException("已经存在的缓存对象");
+        cache.get().map.put(name, obj);
+    }
+
+    public static Object getObject(String name){
+        return cache.get().map.get(name);
     }
 }
