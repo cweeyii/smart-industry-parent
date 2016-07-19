@@ -2,23 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04007b81-7d61-43f7-9a2a-2a56ff27faef" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/MonitorThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/SQLContextListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/vo/SQLStatVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/SqlStatInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/SqlWebStatFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-industry-task/target/smart-industry-task-1.0-SNAPSHOT/WEB-INF/classes/com/cweeyii/quartz/job/elasticsearch/FirstElasticSearchJob.class" afterPath="$PROJECT_DIR$/smart-industry-task/target/smart-industry-task-1.0-SNAPSHOT/WEB-INF/classes/com/cweeyii/quartz/job/elasticsearch/FirstElasticSearchJob.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-industry-biz/target/classes/com/cweeyii/thread/local/ThreadCache$1.class" afterPath="$PROJECT_DIR$/smart-industry-biz/target/classes/com/cweeyii/thread/local/ThreadCache$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-industry-biz/target/classes/com/cweeyii/thread/local/ThreadCache$ThreadContext.class" afterPath="$PROJECT_DIR$/smart-industry-biz/target/classes/com/cweeyii/thread/local/ThreadCache$ThreadContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-industry-biz/target/classes/com/cweeyii/thread/local/ThreadCache.class" afterPath="$PROJECT_DIR$/smart-industry-biz/target/classes/com/cweeyii/thread/local/ThreadCache.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-industry-task/target/smart-industry-task-1.0-SNAPSHOT/WEB-INF/lib/smart-industry-biz-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/smart-industry-task/target/smart-industry-task-1.0-SNAPSHOT/WEB-INF/lib/smart-industry-biz-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-industry-task/target/smart-industry-task-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/smart-industry-task/target/smart-industry-task-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/thread/local/ThreadCache.java" afterPath="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/thread/local/ThreadCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-industry-task/src/main/resources/applicationContext-beans.xml" afterPath="$PROJECT_DIR$/smart-industry-task/src/main/resources/applicationContext-beans.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-industry-task/target/classes/applicationContext-beans.xml" afterPath="$PROJECT_DIR$/smart-industry-task/target/classes/applicationContext-beans.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-industry-task/target/smart-industry-task-1.0-SNAPSHOT/WEB-INF/classes/applicationContext-beans.xml" afterPath="$PROJECT_DIR$/smart-industry-task/target/smart-industry-task-1.0-SNAPSHOT/WEB-INF/classes/applicationContext-beans.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-industry-task/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/smart-industry-task/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart-industry-task/target/smart-industry-task-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/smart-industry-task/target/smart-industry-task-1.0-SNAPSHOT/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/target/classes/com/cweeyii/algorithm/search/BinSearch.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/target/classes/com/cweeyii/algorithm/ipbacklist/BitMap.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/target/classes/com/cweeyii/algorithm/number/CombineRank.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/target/classes/com/cweeyii/algorithm/graph/GraphUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/target/classes/com/cweeyii/algorithm/ipbacklist/IpList.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/target/classes/com/cweeyii/algorithm/ipbacklist/IpListBitMap.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/target/classes/com/cweeyii/algorithm/sort/MergeSort.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/target/classes/com/cweeyii/algorithm/graph/Node.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/target/classes/com/cweeyii/algorithm/number/NumberMaxDifferent.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/target/classes/com/cweeyii/algorithm/sort/QuickSort.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/search/BinSearch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/tree/BinTreeNode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/ipbacklist/BitMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/number/CombineRank.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/graph/GraphUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/ipbacklist/IpList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/ipbacklist/IpListBitMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/sort/MergeSort.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/graph/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/number/NumberMaxDifferent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/sort/QuickSort.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/tree/TreeUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="smart-industry-parent.iws" />
@@ -35,6 +40,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/smart-industry-parent$TreeUtil.coverage" NAME="TreeUtil Coverage Results" MODIFIED="1468852701934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.cweeyii.algorithm.tree.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/smart-industry-parent$GraphUtil.coverage" NAME="GraphUtil Coverage Results" MODIFIED="1468495175488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.cweeyii.algorithm.graph.*</FILTER>
+    </SUITE>
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -44,132 +57,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/webapp/WEB-INF/web.xml">
+      <file leaf-file-name="BinTreeNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/tree/BinTreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-              <folding />
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+              <folding>
+                <element signature="e#236#237#0" expanded="true" />
+                <element signature="e#264#265#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SqlWebStatFilter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/SqlWebStatFilter.java">
+      <file leaf-file-name="TreeUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/tree/TreeUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27091634">
-              <caret line="68" column="56" selection-start-line="68" selection-start-column="56" selection-end-line="68" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.6979866">
+              <caret line="311" column="8" selection-start-line="311" selection-start-column="8" selection-end-line="311" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#init#0;class#SqlWebStatFilter#0" expanded="false" />
-                <element signature="method#isExclusion#0;class#SqlWebStatFilter#0" expanded="false" />
+                <element signature="e#9263#9264#0" expanded="true" />
+                <element signature="e#9320#9321#0" expanded="true" />
+                <element signature="e#9384#9385#0" expanded="true" />
+                <element signature="e#9439#9440#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebStatFilter.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/support/http/WebStatFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="94" column="34" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#12376#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="method#init#0;class#WebStatFilter#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebAppStat.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/support/http/stat/WebAppStat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="252" column="22" selection-start-line="252" selection-start-column="22" selection-end-line="252" selection-end-column="22" />
-              <folding>
-                <element signature="method#getURIStatValueList#0;class#WebAppStat#0" expanded="false" />
-                <element signature="method#getURIStatDataList#0;class#WebAppStat#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SQLContextListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/SQLContextListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="38" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqlStatInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/SqlStatInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.2363636">
-              <caret line="39" column="84" selection-start-line="39" selection-start-column="84" selection-end-line="39" selection-end-column="84" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebURIStat.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/support/http/stat/WebURIStat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.2363634">
-              <caret line="161" column="27" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#23238#0" expanded="true" />
-                <element signature="e#12114#12115#0" expanded="true" />
-                <element signature="e#12155#12156#0" expanded="true" />
-                <element signature="e#16573#16574#0" expanded="true" />
-                <element signature="e#16613#16614#0" expanded="true" />
-                <element signature="e#23182#23183#0" expanded="true" />
-                <element signature="e#23234#23235#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractWebStatImpl.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/support/http/AbstractWebStatImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getSessionStat#0;class#AbstractWebStatImpl#0" expanded="false" />
-                <element signature="method#getRemoteAddress#0;class#AbstractWebStatImpl#0" expanded="false" />
-                <element signature="method#getPrincipal#0;class#AbstractWebStatImpl#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MonitorThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/MonitorThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5636364">
-              <caret line="47" column="22" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applicationContext-beans.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/resources/applicationContext-beans.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.64">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -180,6 +92,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -195,21 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/elasticsearch/framework/vo/EnterpriseIndexView.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/smart-industry-biz/pom.xml" />
-        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/quartz/job/redis/FirstRedisJob.java" />
-        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/quartz/job/mq/FirstRabbitMqJob.java" />
-        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/quartz/job/cache/FirstCahceRefreshJob.java" />
-        <option value="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/elasticsearch/framework/client/ESClientConfig.java" />
-        <option value="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/annotation/BaseDataProvider.java" />
-        <option value="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/annotation/CacheEntity.java" />
-        <option value="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/annotation/DataServiceUnit.java" />
-        <option value="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/annotation/MedisDataType.java" />
-        <option value="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/constrant/FieldType.java" />
-        <option value="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/MapCacheDataService.java" />
-        <option value="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/manager/DataProviderManager.java" />
-        <option value="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/provider/AbstractDataProviderUnit.java" />
         <option value="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/provider/EnterpriseDataProviderUnit.java" />
         <option value="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/quartz/framework/AbstractQuartzJob.java" />
         <option value="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/util/DateUtil.java" />
@@ -246,6 +144,21 @@
         <option value="$PROJECT_DIR$/smart-industry-task/src/main/resources/applicationContext-beans.xml" />
         <option value="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/SqlStatInterceptor.java" />
         <option value="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/SqlWebStatFilter.java" />
+        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/web/IpList.java" />
+        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/web/BitMapIpList.java" />
+        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/ipbacklist/BitMap.java" />
+        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/ipbacklist/IpListBitMap.java" />
+        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/graph/Graph.java" />
+        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/graph/Node.java" />
+        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/graph/GraphUtil.java" />
+        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/BinSearch.java" />
+        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/sort/QuickSort.java" />
+        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/sort/MergeSort.java" />
+        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/number/NumberMaxDifferent.java" />
+        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/number/CombineRank.java" />
+        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/tree/TreeNode.java" />
+        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/tree/BinTreeNode.java" />
+        <option value="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/tree/TreeUtil.java" />
       </list>
     </option>
   </component>
@@ -309,10 +222,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="30" />
-    <option name="y" value="35" />
+    <option name="x" value="16" />
+    <option name="y" value="23" />
     <option name="width" value="1395" />
-    <option name="height" value="787" />
+    <option name="height" value="812" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -343,140 +256,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="smart-industry-parent" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smart-industry-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-beans:3.2.9.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-beans-3.2.9.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smart-industry-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-beans:3.2.9.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-beans-3.2.9.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="factory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smart-industry-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-beans:3.2.9.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-beans-3.2.9.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="factory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smart-industry-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-beans:3.2.9.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-beans-3.2.9.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="factory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PropertyPlaceholderConfigurer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smart-industry-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: org.springframework:spring-beans:3.2.9.RELEASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-beans-3.2.9.RELEASE.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -610,18 +389,8 @@
               <option name="myItemId" value="cweeyii" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="smart-industry-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smart-industry-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smart-industry-biz" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -635,33 +404,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="smart-industry-biz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smart-industry-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smart-industry-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="smart-industry-biz" />
+              <option name="myItemId" value="smart-industry-task" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -691,7 +434,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="smart-industry-biz" />
+              <option name="myItemId" value="smart-industry-task" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -711,7 +454,177 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mointor" />
+              <option name="myItemId" value="algorithm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TreeUtil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-industry-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-industry-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-industry-task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cweeyii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-industry-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-industry-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-industry-task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cweeyii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-industry-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-industry-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-industry-task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cweeyii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ipbacklist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-industry-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-industry-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-industry-task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cweeyii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-industry-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-industry-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-industry-biz" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -755,31 +668,105 @@
       <recent name="com.cweeyii.baseinfo.core.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.smart-task">
-    <configuration default="false" name="com.cweeyii.index in smart-industry-biz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.TreeUtil">
+    <configuration default="false" name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.cweeyii.index.*" />
+          <option name="PATTERN" value="com.cweeyii.algorithm.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="smart-industry-biz" />
+      <option name="MAIN_CLASS_NAME" value="com.cweeyii.algorithm.sort.QuickSort" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.cweeyii.index" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <module name="smart-industry-task" />
       <envs />
-      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.cweeyii.algorithm.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.cweeyii.algorithm.sort.MergeSort" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="smart-industry-task" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="NumberMaxDifferent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.cweeyii.algorithm.number.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.cweeyii.algorithm.number.NumberMaxDifferent" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="smart-industry-task" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CombineRank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.cweeyii.algorithm.number.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.cweeyii.algorithm.number.CombineRank" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="smart-industry-task" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TreeUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.cweeyii.algorithm.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.cweeyii.algorithm.tree.TreeUtil" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="smart-industry-task" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -1116,13 +1103,21 @@
         </option>
       </method>
     </configuration>
-    <list size="2">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.smart-task" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.com.cweeyii.index in smart-industry-biz" />
+      <item index="1" class="java.lang.String" itemvalue="Application.QuickSort" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MergeSort" />
+      <item index="3" class="java.lang.String" itemvalue="Application.NumberMaxDifferent" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CombineRank" />
+      <item index="5" class="java.lang.String" itemvalue="Application.TreeUtil" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.com.cweeyii.index in smart-industry-biz" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.TreeUtil" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CombineRank" />
+        <item index="2" class="java.lang.String" itemvalue="Application.NumberMaxDifferent" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MergeSort" />
+        <item index="4" class="java.lang.String" itemvalue="Application.QuickSort" />
       </list>
     </recent_temporary>
   </component>
@@ -1167,15 +1162,24 @@
       <workItem from="1467338317329" duration="4809000" />
       <workItem from="1467353673259" duration="9167000" />
       <workItem from="1467379740328" duration="24214000" />
-      <workItem from="1467467067135" duration="3437000" />
+      <workItem from="1467467067135" duration="4092000" />
+      <workItem from="1468414935812" duration="3921000" />
+      <workItem from="1468419628618" duration="538000" />
+      <workItem from="1468467505249" duration="450000" />
+      <workItem from="1468477525940" duration="3462000" />
+      <workItem from="1468483610478" duration="511000" />
+      <workItem from="1468484845637" duration="7417000" />
+      <workItem from="1468506655821" duration="4618000" />
+      <workItem from="1468550254060" duration="4563000" />
+      <workItem from="1468846885956" duration="16226000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194821000" />
+    <option name="totallyTimeSpent" value="237182000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="35" width="1395" height="787" extended-state="0" />
+    <frame x="16" y="23" width="1395" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1187,10 +1191,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32805756" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963786" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2638889" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963786" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2028777" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32446414" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3998522" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963786" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1198,7 +1203,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51942444" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4611111" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1259,7 +1264,7 @@
           <option name="timeStamp" value="259" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="261" />
+      <option name="time" value="309" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -1281,148 +1286,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/support/http/stat/WebSessionStat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="209" column="57" selection-start-line="209" selection-start-column="42" selection-end-line="209" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/support/monitor/annotation/MField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15742129">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/support/spring/stat/SpringMethodStatValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="9" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/support/ibatis/IbatisUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.63474387">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/util/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.523385">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/util/JdbcSqlStatUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4387528">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7.jar!/support/monitor/mysql/datasource.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7.jar!/support/monitor/mysql/const.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7.jar!/support/monitor/mysql/basic.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6785714">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/sql/SQLUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="48" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7.jar!/support/monitor/mysql/sql.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7.jar!/support/monitor/mysql/springmethod.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/util/JdbcUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3518931">
-          <caret line="644" column="36" selection-start-line="644" selection-start-column="23" selection-end-line="644" selection-end-column="36" />
-          <folding>
-            <element signature="method#printResultSet#1;class#JdbcUtils#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/support/profile/ProfileEntryKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6981132">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/support/profile/ProfileEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28301886">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/support/profile/Profiler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0377358">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/support/profile/ProfileStat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="56" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/support/spring/stat/SpringStatManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="25" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="25" />
-          <folding>
-            <element signature="e#1234#1235#0" expanded="false" />
-            <element signature="e#1265#1266#0" expanded="false" />
-            <element signature="e#1706#1707#0" expanded="false" />
-            <element signature="e#1756#1757#0" expanded="false" />
-            <element signature="method#getSpringStatSetFromSysProperty#0;class#SpringStatManager#0" expanded="false" />
-            <element signature="method#getMethodStatData#1;class#SpringStatManager#0" expanded="false" />
-            <element signature="method#resetStat#0;class#SpringStatManager#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/quartz/job/mq/FirstRabbitMqJob.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16176471">
@@ -1434,7 +1297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2647059">
           <caret line="29" column="28" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1442,9 +1304,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5294118">
           <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-          <folding>
-            <element signature="method#getMethodStat#0;class#SpringStat#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1452,25 +1311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="173" column="35" selection-start-line="173" selection-start-column="35" selection-end-line="173" selection-end-column="35" />
-          <folding>
-            <element signature="method#reset#0;class#SpringMethodStat#0" expanded="false" />
-            <element signature="e#9968#9969#0" expanded="false" />
-            <element signature="e#10009#10010#0" expanded="false" />
-            <element signature="method#beforeInvoke#0;class#SpringMethodStat#0" expanded="false" />
-            <element signature="method#afterInvoke#0;class#SpringMethodStat#0" expanded="false" />
-            <element signature="method#histogramRecord#0;class#SpringMethodStat#0" expanded="false" />
-            <element signature="method#getHistogramValues#0;class#SpringMethodStat#0" expanded="false" />
-            <element signature="e#13274#13275#0" expanded="false" />
-            <element signature="e#13329#13330#0" expanded="false" />
-            <element signature="e#13473#13474#0" expanded="false" />
-            <element signature="e#13532#13533#0" expanded="false" />
-            <element signature="e#13663#13664#0" expanded="false" />
-            <element signature="e#13713#13714#0" expanded="false" />
-            <element signature="e#14185#14186#0" expanded="false" />
-            <element signature="e#14240#14241#0" expanded="false" />
-            <element signature="e#14591#14592#0" expanded="false" />
-            <element signature="e#14640#14641#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1485,16 +1325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="e#340#341#0" expanded="false" />
-            <element signature="e#366#367#0" expanded="false" />
-            <element signature="e#479#480#0" expanded="false" />
-            <element signature="e#512#513#0" expanded="false" />
-            <element signature="e#624#625#0" expanded="false" />
-            <element signature="e#652#653#0" expanded="false" />
-            <element signature="e#947#948#0" expanded="false" />
-            <element signature="e#984#985#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1502,11 +1332,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="188" column="36" selection-start-line="188" selection-start-column="16" selection-end-line="188" selection-end-column="36" />
-          <folding>
-            <element signature="method#afterPropertiesSet#0;class#DruidStatInterceptor#0" expanded="false" />
-            <element signature="method#destroy#0;class#DruidStatInterceptor#0" expanded="false" />
-            <element signature="method#getMethodInfo#0;class#DruidStatInterceptor#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1528,7 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1543,10 +1367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20588236">
           <caret line="81" column="25" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
-          <folding>
-            <element signature="method#hashCode#0;class#SpringMethodInfo#0" expanded="false" />
-            <element signature="method#equals#0;class#SpringMethodInfo#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1561,7 +1381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33235294">
           <caret line="424" column="0" selection-start-line="424" selection-start-column="0" selection-end-line="424" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1583,7 +1402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33235294">
           <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1598,7 +1416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33235294">
           <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1606,7 +1423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48096886">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1614,10 +1430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-          <folding>
-            <element signature="e#1703#1704#0" expanded="false" />
-            <element signature="e#1752#1753#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1625,9 +1437,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="60" selection-start-line="57" selection-start-column="7" selection-end-line="58" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1635,11 +1444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="94" column="34" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#12376#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#WebStatFilter#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1647,7 +1451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4509804">
           <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1655,41 +1458,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="252" column="22" selection-start-line="252" selection-start-column="22" selection-end-line="252" selection-end-column="22" />
-          <folding>
-            <element signature="method#getURIStatValueList#0;class#WebAppStat#0" expanded="false" />
-            <element signature="method#getURIStatDataList#0;class#WebAppStat#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.7/druid-1.0.7-sources.jar!/com/alibaba/druid/support/http/stat/WebURIStat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2363634">
+        <state vertical-scroll-proportion="0.0">
           <caret line="161" column="27" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="27" />
           <folding>
-            <element signature="e#0#23238#0" expanded="true" />
-            <element signature="e#12114#12115#0" expanded="true" />
-            <element signature="e#12155#12156#0" expanded="true" />
-            <element signature="e#16573#16574#0" expanded="true" />
-            <element signature="e#16613#16614#0" expanded="true" />
-            <element signature="e#23182#23183#0" expanded="true" />
-            <element signature="e#23234#23235#0" expanded="true" />
+            <element signature="e#0#23238#0" expanded="false" />
+            <element signature="e#12114#12115#0" expanded="false" />
+            <element signature="e#12155#12156#0" expanded="false" />
+            <element signature="e#16573#16574#0" expanded="false" />
+            <element signature="e#16613#16614#0" expanded="false" />
+            <element signature="e#23182#23183#0" expanded="false" />
+            <element signature="e#23234#23235#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/resources/applicationContext-beans.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.64">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1699,7 +1490,26 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#8149#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2028#2029#0" expanded="false" />
+            <element signature="e#2068#2069#0" expanded="false" />
+            <element signature="e#2135#2136#0" expanded="false" />
+            <element signature="e#2193#2194#0" expanded="false" />
+            <element signature="e#2233#2234#0" expanded="false" />
+            <element signature="e#2269#2270#0" expanded="false" />
+            <element signature="e#2328#2329#0" expanded="false" />
+            <element signature="e#2378#2379#0" expanded="false" />
+            <element signature="e#2416#2417#0" expanded="false" />
+            <element signature="e#2450#2451#0" expanded="false" />
+            <element signature="e#2493#2494#0" expanded="false" />
+            <element signature="e#2535#2536#0" expanded="false" />
+            <element signature="e#2598#2599#0" expanded="false" />
+            <element signature="e#2644#2645#0" expanded="false" />
+            <element signature="e#2691#2692#0" expanded="false" />
+            <element signature="e#2734#2735#0" expanded="false" />
+            <element signature="e#2780#2781#0" expanded="false" />
+            <element signature="e#2822#2823#0" expanded="false" />
             <element signature="method#getSessionStat#0;class#AbstractWebStatImpl#0" expanded="false" />
             <element signature="method#getRemoteAddress#0;class#AbstractWebStatImpl#0" expanded="false" />
             <element signature="method#getPrincipal#0;class#AbstractWebStatImpl#0" expanded="false" />
@@ -1709,11 +1519,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/MonitorThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5636364">
+        <state vertical-scroll-proportion="0.0">
           <caret line="47" column="22" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1721,30 +1528,170 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="38" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/SqlStatInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2363636">
+        <state vertical-scroll-proportion="0.0">
           <caret line="39" column="84" selection-start-line="39" selection-start-column="84" selection-end-line="39" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/rt.jar!/java/util/Collections.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4776537">
+          <caret line="3476" column="35" selection-start-line="3476" selection-start-column="30" selection-end-line="3476" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/lib/sa-jdi.jar!/sun/jvm/hotspot/utilities/BitMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/SqlWebStatFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27091634">
+        <state vertical-scroll-proportion="0.14383562">
           <caret line="68" column="56" selection-start-line="68" selection-start-column="56" selection-end-line="68" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/ipbacklist/IpList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5025773">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="2420" column="20" selection-start-line="2420" selection-start-column="20" selection-end-line="2420" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/search/BinSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9931507">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/ipbacklist/BitMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65753424">
+          <caret line="100" column="9" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/graph/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29452056">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/ipbacklist/IpListBitMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.2077625">
+          <caret line="88" column="50" selection-start-line="88" selection-start-column="50" selection-end-line="88" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="3282" column="24" selection-start-line="3282" selection-start-column="24" selection-end-line="3282" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/sort/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="method#quickSort#0;class#QuickSort#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/number/CombineRank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0273973">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/sort/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1141553">
+          <caret line="47" column="48" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/number/NumberMaxDifferent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84703195">
+          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/3.2.9.RELEASE/spring-webmvc-3.2.9.RELEASE.jar!/org/springframework/web/servlet/handler/HandlerInterceptorAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21791768">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/web/interceptor/DefaultInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17991005">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14542729">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/graph/GraphUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5095057">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/tree/BinTreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding>
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/tree/TreeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6979866">
+          <caret line="311" column="8" selection-start-line="311" selection-start-column="8" selection-end-line="311" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#SqlWebStatFilter#0" expanded="false" />
-            <element signature="method#isExclusion#0;class#SqlWebStatFilter#0" expanded="false" />
+            <element signature="e#9263#9264#0" expanded="true" />
+            <element signature="e#9320#9321#0" expanded="true" />
+            <element signature="e#9384#9385#0" expanded="true" />
+            <element signature="e#9439#9440#0" expanded="true" />
           </folding>
         </state>
       </provider>
