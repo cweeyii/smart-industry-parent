@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cweeyii.quartz.framework.dao.mapper.QRTZJobResultMapper" >
+
+  <resultMap id="BaseResultMap" type="com.cweeyii.quartz.framework.domain.QRTZJobResult" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="job_name" property="jobName" jdbcType="VARCHAR" />
+        <result column="trigger_name" property="triggerName" jdbcType="VARCHAR" />
+        <result column="start_time" property="startTime" jdbcType="TIMESTAMP" />
+        <result column="result" property="result" jdbcType="INTEGER" />
+        <result column="end_time" property="endTime" jdbcType="TIMESTAMP" />
+        <result column="host_name" property="hostName" jdbcType="VARCHAR" />
+  </resultMap>
+
+  <sql id="Base_Column_List" >
+    id, job_name,trigger_name,start_time,result,end_time,host_name
+  </sql>
+
+  <insert id="insert" parameterType="com.cweeyii.quartz.framework.domain.QRTZJobResult">
+    <selectKey resultType="java.lang.Long" keyProperty="id" order="AFTER" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+  	insert into QRTZ_JOB_RESULT (job_name,trigger_name,start_time,result,end_time,host_name) 
+  	values (#{jobName},#{triggerName},#{startTime},#{result},#{endTime},#{hostName})
+  </insert>
+    
+    <update id="update">
+    	update QRTZ_JOB_RESULT set end_time = #{endTime},result = #{result} where id = #{id}
+    </update>
+    
+    <select id="findLatestResultsByJobName" resultType="com.cweeyii.quartz.framework.domain.QRTZJobResult">
+    	select * from QRTZ_JOB_RESULT where job_name = #{0} order by id desc limit #{1}
+    </select>
+
+</mapper>

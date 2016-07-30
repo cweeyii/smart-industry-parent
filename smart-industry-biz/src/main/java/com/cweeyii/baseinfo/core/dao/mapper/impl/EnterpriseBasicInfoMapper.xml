@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cweeyii.baseinfo.core.dao.mapper.EnterpriseBasicInfoMapper">
+
+    <sql id="Base_Column_List">
+    id,enterprise_name,longitude,latitude,city_name,district_name,address,phone,business_category
+</sql>
+
+    <insert id="insert" parameterType="com.cweeyii.baseinfo.core.domain.EnterpriseBasicInfo">
+    insert into enterprise_basic_info(id,enterprise_name,longitude,latitude,city_name,district_name,address,phone,business_category)
+    values (#{id}, #{enterpriseName}, #{longitude}, #{latitude}, #{cityName}, #{districtName}, #{address}, #{phone},
+    #{businessCategory}}
+    )
+</insert>
+
+    <select id="findById" resultType="com.cweeyii.baseinfo.core.domain.EnterpriseBasicInfo"
+            parameterType="java.util.Map">
+        select
+        <include refid="Base_Column_List"/>
+        from enterprise_basic_info
+        where id=#{id}
+    </select>
+
+    <select id="findByIds" resultType="com.cweeyii.baseinfo.core.domain.EnterpriseBasicInfo"
+            parameterType="java.util.Map">
+        select
+        <include refid="Base_Column_List"/>
+        from enterprise_basic_info
+        where id in
+        <foreach collection="list" item="id" index="index" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </select>
+
+    <select id="findByPage" resultType="com.cweeyii.baseinfo.core.domain.EnterpriseBasicInfo"
+            parameterType="java.util.Map">
+        select
+        <include refid="Base_Column_List"/>
+        from enterprise_basic_info
+        where id > #{offset} limit #{pageSize}
+    </select>
+</mapper>
