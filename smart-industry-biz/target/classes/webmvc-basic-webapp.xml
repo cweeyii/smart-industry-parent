@@ -46,7 +46,7 @@
                         </list>
                     </property>
                 </bean>
-                <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"></bean>
+                <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />
             </list>
         </property>
     </bean>

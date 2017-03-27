@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - hive@localhost" uuid="ccd168b5-74f5-4661-aad8-6b802a774b98">
+    <database-info product="MySQL" version="5.6.25" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="hive"/>
+    <table name="BUCKETING_COLS" schema="" catalog="hive" type="TABLE">
+      <column name="SD_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="BUCKET_COL_NAME" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="INTEGER_IDX" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="SD_ID,INTEGER_IDX"/>
+      <foreign-key name="BUCKETING_COLS_FK1" columns="SD_ID" ref-table="SDS" ref-schema="" ref-catalog="hive" ref-columns="SD_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="BUCKETING_COLS_N49" unique="false" columns="SD_ID"/>
+    </table>
+    <table name="CDS" schema="" catalog="hive" type="TABLE">
+      <column name="CD_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="CD_ID"/>
+      <exported-key name="COLUMNS_V2_FK1" table="COLUMNS_V2" schema="" catalog="hive" columns="CD_ID"/>
+      <exported-key name="SDS_FK1" table="SDS" schema="" catalog="hive" columns="CD_ID"/>
+    </table>
+    <table name="COLUMNS_V2" schema="" catalog="hive" type="TABLE">
+      <column name="CD_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="COMMENT" sqlType="VARCHAR" precision="256" scale="0" nullable="true" jdbcType="12"/>
+      <column name="COLUMN_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <column name="TYPE_NAME" sqlType="VARCHAR" precision="4000" scale="0" nullable="false" jdbcType="12"/>
+      <column name="INTEGER_IDX" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="CD_ID,COLUMN_NAME"/>
+      <foreign-key name="COLUMNS_V2_FK1" columns="CD_ID" ref-table="CDS" ref-schema="" ref-catalog="hive" ref-columns="CD_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="COLUMNS_V2_N49" unique="false" columns="CD_ID"/>
+    </table>
+    <table name="DATABASE_PARAMS" schema="" catalog="hive" type="TABLE">
+      <column name="DB_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="PARAM_KEY" sqlType="VARCHAR" precision="180" scale="0" nullable="false" jdbcType="12"/>
+      <column name="PARAM_VALUE" sqlType="VARCHAR" precision="4000" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="DB_ID,PARAM_KEY"/>
+      <foreign-key name="DATABASE_PARAMS_FK1" columns="DB_ID" ref-table="DBS" ref-schema="" ref-catalog="hive" ref-columns="DB_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="DATABASE_PARAMS_N49" unique="false" columns="DB_ID"/>
+    </table>
+    <table name="DBS" schema="" catalog="hive" type="TABLE">
+      <column name="DB_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="DESC" sqlType="VARCHAR" precision="4000" scale="0" nullable="true" jdbcType="12"/>
+      <column name="DB_LOCATION_URI" sqlType="VARCHAR" precision="4000" scale="0" nullable="false" jdbcType="12"/>
+      <column name="NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="OWNER_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="OWNER_TYPE" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="DB_ID"/>
+      <exported-key name="DATABASE_PARAMS_FK1" table="DATABASE_PARAMS" schema="" catalog="hive" columns="DB_ID"/>
+      <exported-key name="FUNCS_FK1" table="FUNCS" schema="" catalog="hive" columns="DB_ID"/>
+      <exported-key name="TBLS_FK1" table="TBLS" schema="" catalog="hive" columns="DB_ID"/>
+      <index name="UNIQUE_DATABASE" unique="true" columns="NAME"/>
+    </table>
+    <table name="FUNCS" schema="" catalog="hive" type="TABLE">
+      <column name="FUNC_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="CLASS_NAME" sqlType="VARCHAR" precision="4000" scale="0" nullable="true" jdbcType="12"/>
+      <column name="CREATE_TIME" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="DB_ID" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="FUNC_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="FUNC_TYPE" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="OWNER_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="OWNER_TYPE" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="FUNC_ID"/>
+      <foreign-key name="FUNCS_FK1" columns="DB_ID" ref-table="DBS" ref-schema="" ref-catalog="hive" ref-columns="DB_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FUNC_RU_FK1" table="FUNC_RU" schema="" catalog="hive" columns="FUNC_ID"/>
+      <index name="UNIQUEFUNCTION" unique="true" columns="FUNC_NAME,DB_ID"/>
+      <index name="FUNCS_N49" unique="false" columns="DB_ID"/>
+    </table>
+    <table name="FUNC_RU" schema="" catalog="hive" type="TABLE">
+      <column name="FUNC_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="RESOURCE_TYPE" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="RESOURCE_URI" sqlType="VARCHAR" precision="4000" scale="0" nullable="true" jdbcType="12"/>
+      <column name="INTEGER_IDX" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="FUNC_ID,INTEGER_IDX"/>
+      <foreign-key name="FUNC_RU_FK1" columns="FUNC_ID" ref-table="FUNCS" ref-schema="" ref-catalog="hive" ref-columns="FUNC_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FUNC_RU_N49" unique="false" columns="FUNC_ID"/>
+    </table>
+    <table name="GLOBAL_PRIVS" schema="" catalog="hive" type="TABLE">
+      <column name="USER_GRANT_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="CREATE_TIME" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="GRANT_OPTION" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5"/>
+      <column name="GRANTOR" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="GRANTOR_TYPE" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="PRINCIPAL_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="PRINCIPAL_TYPE" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="USER_PRIV" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="USER_GRANT_ID"/>
+      <index name="GLOBALPRIVILEGEINDEX" unique="true" columns="PRINCIPAL_NAME,PRINCIPAL_TYPE,USER_PRIV,GRANTOR,GRANTOR_TYPE"/>
+    </table>
+    <table name="PARTITIONS" schema="" catalog="hive" type="TABLE">
+      <column name="PART_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="CREATE_TIME" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="LAST_ACCESS_TIME" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="PART_NAME" sqlType="VARCHAR" precision="767" scale="0" nullable="true" jdbcType="12"/>
+      <column name="SD_ID" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="TBL_ID" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="PART_ID"/>
+      <foreign-key name="PARTITIONS_FK1" columns="TBL_ID" ref-table="TBLS" ref-schema="" ref-catalog="hive" ref-columns="TBL_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="PARTITIONS_FK2" columns="SD_ID" ref-table="SDS" ref-schema="" ref-catalog="hive" ref-columns="SD_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="PARTITION_KEY_VALS_FK1" table="PARTITION_KEY_VALS" schema="" catalog="hive" columns="PART_ID"/>
+      <exported-key name="PARTITION_PARAMS_FK1" table="PARTITION_PARAMS" schema="" catalog="hive" columns="PART_ID"/>
+      <exported-key name="PART_COL_STATS_FK1" table="PART_COL_STATS" schema="" catalog="hive" columns="PART_ID"/>
+      <index name="UNIQUEPARTITION" unique="true" columns="PART_NAME,TBL_ID"/>
+      <index name="PARTITIONS_N49" unique="false" columns="SD_ID"/>
+      <index name="PARTITIONS_N50" unique="false" columns="TBL_ID"/>
+    </table>
+    <table name="PARTITION_KEYS" schema="" catalog="hive" type="TABLE">
+      <column name="TBL_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="PKEY_COMMENT" sqlType="VARCHAR" precision="4000" scale="0" nullable="true" jdbcType="12"/>
+      <column name="PKEY_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <column name="PKEY_TYPE" sqlType="VARCHAR" precision="767" scale="0" nullable="false" jdbcType="12"/>
+      <column name="INTEGER_IDX" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="TBL_ID,PKEY_NAME"/>
+      <foreign-key name="PARTITION_KEYS_FK1" columns="TBL_ID" ref-table="TBLS" ref-schema="" ref-catalog="hive" ref-columns="TBL_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="PARTITION_KEYS_N49" unique="false" columns="TBL_ID"/>
+    </table>
+    <table name="PARTITION_KEY_VALS" schema="" catalog="hive" type="TABLE">
+      <column name="PART_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="PART_KEY_VAL" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="INTEGER_IDX" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="PART_ID,INTEGER_IDX"/>
+      <foreign-key name="PARTITION_KEY_VALS_FK1" columns="PART_ID" ref-table="PARTITIONS" ref-schema="" ref-catalog="hive" ref-columns="PART_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="PARTITION_KEY_VALS_N49" unique="false" columns="PART_ID"/>
+    </table>
+    <table name="PARTITION_PARAMS" schema="" catalog="hive" type="TABLE">
+      <column name="PART_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="PARAM_KEY" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12"/>
+      <column name="PARAM_VALUE" sqlType="VARCHAR" precision="4000" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="PART_ID,PARAM_KEY"/>
+      <foreign-key name="PARTITION_PARAMS_FK1" columns="PART_ID" ref-table="PARTITIONS" ref-schema="" ref-catalog="hive" ref-columns="PART_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="PARTITION_PARAMS_N49" unique="false" columns="PART_ID"/>
+    </table>
+    <table name="PART_COL_STATS" schema="" catalog="hive" type="TABLE">
+      <column name="CS_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="AVG_COL_LEN" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="COLUMN_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <column name="COLUMN_TYPE" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <column name="DB_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <column name="BIG_DECIMAL_HIGH_VALUE" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="BIG_DECIMAL_LOW_VALUE" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="DOUBLE_HIGH_VALUE" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="DOUBLE_LOW_VALUE" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="LAST_ANALYZED" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="LONG_HIGH_VALUE" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="LONG_LOW_VALUE" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="MAX_COL_LEN" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="NUM_DISTINCTS" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="NUM_FALSES" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="NUM_NULLS" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="NUM_TRUES" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="PART_ID" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="PARTITION_NAME" sqlType="VARCHAR" precision="767" scale="0" nullable="false" jdbcType="12"/>
+      <column name="TABLE_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="CS_ID"/>
+      <foreign-key name="PART_COL_STATS_FK1" columns="PART_ID" ref-table="PARTITIONS" ref-schema="" ref-catalog="hive" ref-columns="PART_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="PART_COL_STATS_N49" unique="false" columns="PART_ID"/>
+    </table>
+    <table name="ROLES" schema="" catalog="hive" type="TABLE">
+      <column name="ROLE_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="CREATE_TIME" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="OWNER_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ROLE_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="ROLE_ID"/>
+      <index name="ROLEENTITYINDEX" unique="true" columns="ROLE_NAME"/>
+    </table>
+    <table name="SDS" schema="" catalog="hive" type="TABLE">
+      <column name="SD_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="CD_ID" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="INPUT_FORMAT" sqlType="VARCHAR" precision="4000" scale="0" nullable="true" jdbcType="12"/>
+      <column name="IS_COMPRESSED" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="IS_STOREDASSUBDIRECTORIES" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="LOCATION" sqlType="VARCHAR" precision="4000" scale="0" nullable="true" jdbcType="12"/>
+      <column name="NUM_BUCKETS" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="OUTPUT_FORMAT" sqlType="VARCHAR" precision="4000" scale="0" nullable="true" jdbcType="12"/>
+      <column name="SERDE_ID" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="SD_ID"/>
+      <foreign-key name="SDS_FK1" columns="CD_ID" ref-table="CDS" ref-schema="" ref-catalog="hive" ref-columns="CD_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="SDS_FK2" columns="SERDE_ID" ref-table="SERDES" ref-schema="" ref-catalog="hive" ref-columns="SERDE_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="BUCKETING_COLS_FK1" table="BUCKETING_COLS" schema="" catalog="hive" columns="SD_ID"/>
+      <exported-key name="PARTITIONS_FK2" table="PARTITIONS" schema="" catalog="hive" columns="SD_ID"/>
+      <exported-key name="SD_PARAMS_FK1" table="SD_PARAMS" schema="" catalog="hive" columns="SD_ID"/>
+      <exported-key name="SKEWED_COL_NAMES_FK1" table="SKEWED_COL_NAMES" schema="" catalog="hive" columns="SD_ID"/>
+      <exported-key name="SKEWED_COL_VALUE_LOC_MAP_FK1" table="SKEWED_COL_VALUE_LOC_MAP" schema="" catalog="hive" columns="SD_ID"/>
+      <exported-key name="SKEWED_VALUES_FK1" table="SKEWED_VALUES" schema="" catalog="hive" columns="SD_ID_OID"/>
+      <exported-key name="SORT_COLS_FK1" table="SORT_COLS" schema="" catalog="hive" columns="SD_ID"/>
+      <exported-key name="TBLS_FK2" table="TBLS" schema="" catalog="hive" columns="SD_ID"/>
+      <index name="SDS_N49" unique="false" columns="CD_ID"/>
+      <index name="SDS_N50" unique="false" columns="SERDE_ID"/>
+    </table>
+    <table name="SD_PARAMS" schema="" catalog="hive" type="TABLE">
+      <column name="SD_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="PARAM_KEY" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12"/>
+      <column name="PARAM_VALUE" sqlType="VARCHAR" precision="4000" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="SD_ID,PARAM_KEY"/>
+      <foreign-key name="SD_PARAMS_FK1" columns="SD_ID" ref-table="SDS" ref-schema="" ref-catalog="hive" ref-columns="SD_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="SD_PARAMS_N49" unique="false" columns="SD_ID"/>
+    </table>
+    <table name="SEQUENCE_TABLE" schema="" catalog="hive" type="TABLE">
+      <column name="SEQUENCE_NAME" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="NEXT_VAL" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="SEQUENCE_NAME"/>
+    </table>
+    <table name="SERDES" schema="" catalog="hive" type="TABLE">
+      <column name="SERDE_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="SLIB" sqlType="VARCHAR" precision="4000" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="SERDE_ID"/>
+      <exported-key name="SDS_FK2" table="SDS" schema="" catalog="hive" columns="SERDE_ID"/>
+      <exported-key name="SERDE_PARAMS_FK1" table="SERDE_PARAMS" schema="" catalog="hive" columns="SERDE_ID"/>
+    </table>
+    <table name="SERDE_PARAMS" schema="" catalog="hive" type="TABLE">
+      <column name="SERDE_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="PARAM_KEY" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12"/>
+      <column name="PARAM_VALUE" sqlType="VARCHAR" precision="4000" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="SERDE_ID,PARAM_KEY"/>
+      <foreign-key name="SERDE_PARAMS_FK1" columns="SERDE_ID" ref-table="SERDES" ref-schema="" ref-catalog="hive" ref-columns="SERDE_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="SERDE_PARAMS_N49" unique="false" columns="SERDE_ID"/>
+    </table>
+    <table name="SKEWED_COL_NAMES" schema="" catalog="hive" type="TABLE">
+      <column name="SD_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="SKEWED_COL_NAME" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="INTEGER_IDX" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="SD_ID,INTEGER_IDX"/>
+      <foreign-key name="SKEWED_COL_NAMES_FK1" columns="SD_ID" ref-table="SDS" ref-schema="" ref-catalog="hive" ref-columns="SD_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="SKEWED_COL_NAMES_N49" unique="false" columns="SD_ID"/>
+    </table>
+    <table name="SKEWED_COL_VALUE_LOC_MAP" schema="" catalog="hive" type="TABLE">
+      <column name="SD_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="STRING_LIST_ID_KID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="LOCATION" sqlType="VARCHAR" precision="4000" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="SD_ID,STRING_LIST_ID_KID"/>
+      <foreign-key name="SKEWED_COL_VALUE_LOC_MAP_FK1" columns="SD_ID" ref-table="SDS" ref-schema="" ref-catalog="hive" ref-columns="SD_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="SKEWED_COL_VALUE_LOC_MAP_FK2" columns="STRING_LIST_ID_KID" ref-table="SKEWED_STRING_LIST" ref-schema="" ref-catalog="hive" ref-columns="STRING_LIST_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="SKEWED_COL_VALUE_LOC_MAP_N49" unique="false" columns="SD_ID"/>
+      <index name="SKEWED_COL_VALUE_LOC_MAP_N50" unique="false" columns="STRING_LIST_ID_KID"/>
+    </table>
+    <table name="SKEWED_STRING_LIST" schema="" catalog="hive" type="TABLE">
+      <column name="STRING_LIST_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="STRING_LIST_ID"/>
+      <exported-key name="SKEWED_COL_VALUE_LOC_MAP_FK2" table="SKEWED_COL_VALUE_LOC_MAP" schema="" catalog="hive" columns="STRING_LIST_ID_KID"/>
+      <exported-key name="SKEWED_STRING_LIST_VALUES_FK1" table="SKEWED_STRING_LIST_VALUES" schema="" catalog="hive" columns="STRING_LIST_ID"/>
+      <exported-key name="SKEWED_VALUES_FK2" table="SKEWED_VALUES" schema="" catalog="hive" columns="STRING_LIST_ID_EID"/>
+    </table>
+    <table name="SKEWED_STRING_LIST_VALUES" schema="" catalog="hive" type="TABLE">
+      <column name="STRING_LIST_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="STRING_LIST_VALUE" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="INTEGER_IDX" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="STRING_LIST_ID,INTEGER_IDX"/>
+      <foreign-key name="SKEWED_STRING_LIST_VALUES_FK1" columns="STRING_LIST_ID" ref-table="SKEWED_STRING_LIST" ref-schema="" ref-catalog="hive" ref-columns="STRING_LIST_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="SKEWED_STRING_LIST_VALUES_N49" unique="false" columns="STRING_LIST_ID"/>
+    </table>
+    <table name="SKEWED_VALUES" schema="" catalog="hive" type="TABLE">
+      <column name="SD_ID_OID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="STRING_LIST_ID_EID" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="INTEGER_IDX" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="SD_ID_OID,INTEGER_IDX"/>
+      <foreign-key name="SKEWED_VALUES_FK1" columns="SD_ID_OID" ref-table="SDS" ref-schema="" ref-catalog="hive" ref-columns="SD_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="SKEWED_VALUES_FK2" columns="STRING_LIST_ID_EID" ref-table="SKEWED_STRING_LIST" ref-schema="" ref-catalog="hive" ref-columns="STRING_LIST_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="SKEWED_VALUES_N49" unique="false" columns="STRING_LIST_ID_EID"/>
+      <index name="SKEWED_VALUES_N50" unique="false" columns="SD_ID_OID"/>
+    </table>
+    <table name="SORT_COLS" schema="" catalog="hive" type="TABLE">
+      <column name="SD_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="COLUMN_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="ORDER" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="INTEGER_IDX" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="SD_ID,INTEGER_IDX"/>
+      <foreign-key name="SORT_COLS_FK1" columns="SD_ID" ref-table="SDS" ref-schema="" ref-catalog="hive" ref-columns="SD_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="SORT_COLS_N49" unique="false" columns="SD_ID"/>
+    </table>
+    <table name="TABLE_PARAMS" schema="" catalog="hive" type="TABLE">
+      <column name="TBL_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="PARAM_KEY" sqlType="VARCHAR" precision="256" scale="0" nullable="false" jdbcType="12"/>
+      <column name="PARAM_VALUE" sqlType="VARCHAR" precision="4000" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="TBL_ID,PARAM_KEY"/>
+      <foreign-key name="TABLE_PARAMS_FK1" columns="TBL_ID" ref-table="TBLS" ref-schema="" ref-catalog="hive" ref-columns="TBL_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="TABLE_PARAMS_N49" unique="false" columns="TBL_ID"/>
+    </table>
+    <table name="TAB_COL_STATS" schema="" catalog="hive" type="TABLE">
+      <column name="CS_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="AVG_COL_LEN" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="COLUMN_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <column name="COLUMN_TYPE" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <column name="DB_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <column name="BIG_DECIMAL_HIGH_VALUE" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="BIG_DECIMAL_LOW_VALUE" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="DOUBLE_HIGH_VALUE" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="DOUBLE_LOW_VALUE" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="LAST_ANALYZED" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="LONG_HIGH_VALUE" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="LONG_LOW_VALUE" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="MAX_COL_LEN" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="NUM_DISTINCTS" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="NUM_FALSES" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="NUM_NULLS" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="NUM_TRUES" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="TBL_ID" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="TABLE_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="CS_ID"/>
+      <foreign-key name="TAB_COL_STATS_FK1" columns="TBL_ID" ref-table="TBLS" ref-schema="" ref-catalog="hive" ref-columns="TBL_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="TAB_COL_STATS_N49" unique="false" columns="TBL_ID"/>
+    </table>
+    <table name="TBLS" schema="" catalog="hive" type="TABLE">
+      <column name="TBL_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="CREATE_TIME" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="DB_ID" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="LAST_ACCESS_TIME" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="OWNER" sqlType="VARCHAR" precision="767" scale="0" nullable="true" jdbcType="12"/>
+      <column name="RETENTION" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="SD_ID" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="TBL_NAME" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="TBL_TYPE" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12"/>
+      <column name="VIEW_EXPANDED_TEXT" sqlType="MEDIUMTEXT" precision="16777215" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="VIEW_ORIGINAL_TEXT" sqlType="MEDIUMTEXT" precision="16777215" scale="0" nullable="true" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="TBL_ID"/>
+      <foreign-key name="TBLS_FK1" columns="DB_ID" ref-table="DBS" ref-schema="" ref-catalog="hive" ref-columns="DB_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="TBLS_FK2" columns="SD_ID" ref-table="SDS" ref-schema="" ref-catalog="hive" ref-columns="SD_ID" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="PARTITIONS_FK1" table="PARTITIONS" schema="" catalog="hive" columns="TBL_ID"/>
+      <exported-key name="PARTITION_KEYS_FK1" table="PARTITION_KEYS" schema="" catalog="hive" columns="TBL_ID"/>
+      <exported-key name="TABLE_PARAMS_FK1" table="TABLE_PARAMS" schema="" catalog="hive" columns="TBL_ID"/>
+      <exported-key name="TAB_COL_STATS_FK1" table="TAB_COL_STATS" schema="" catalog="hive" columns="TBL_ID"/>
+      <index name="UNIQUETABLE" unique="true" columns="TBL_NAME,DB_ID"/>
+      <index name="TBLS_N49" unique="false" columns="DB_ID"/>
+      <index name="TBLS_N50" unique="false" columns="SD_ID"/>
+    </table>
+    <table name="VERSION" schema="" catalog="hive" type="TABLE">
+      <column name="VER_ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="SCHEMA_VERSION" sqlType="VARCHAR" precision="127" scale="0" nullable="false" jdbcType="12"/>
+      <column name="VERSION_COMMENT" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="VER_ID"/>
+    </table>
+  </data-source>
+</component>

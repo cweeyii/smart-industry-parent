@@ -1,0 +1,6 @@
+com/cweeyii/hadoop/WordCount.class
+com/cweeyii/hadoop/WordCountNew$Map.class
+com/cweeyii/hadoop/WordCountNew$Reduce.class
+com/cweeyii/hadoop/WordCount$Map.class
+com/cweeyii/hadoop/WordCount$Reduce.class
+com/cweeyii/hadoop/WordCountNew.class

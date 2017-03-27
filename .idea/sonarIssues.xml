@@ -3,7 +3,742 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/src.zip!/java/lang/SecurityManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/src.zip!/java/lang/System.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/src.zip!/java/lang/ThreadGroup.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/src.zip!/java/lang/reflect/Constructor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/src.zip!/java/net/InetAddress.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/src.zip!/java/util/concurrent/FutureTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/Lock.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/hadoop-wordcount/data/file01">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/hadoop-wordcount/data/file02">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/hadoop-wordcount/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/hadoop-wordcount/src/WordCount.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/hadoop-wordcount/src/com/cweeyii/hadoop/WordCount.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/hadoop-wordcount/src/main/java/com/cweeyii/hadoop/WordCount.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/hadoop-wordcount/src/main/java/com/cweeyii/hadoop/WordCountNew.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/javaagent/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/javaagent/src/main/java/META-INF/MANIFEST.MF">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/javaagent/src/main/java/com/cweeyii/agent/Agent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/javaagent/src/main/java/com/cweeyii/agent/LoadedAgent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/javaagent/src/main/java/com/cweeyii/agent/Test.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/javaagent/src/main/java/com/cweeyii/agent/TestAgent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/javaagent/src/main/java/com/cweeyii/agent/TestTransformer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/javaagent/src/main/resources/META-INF/MANIFEST.MF">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/smart-industry-biz/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/Test.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/cache/framework/manager/DataRepertoryManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/distribute/ConcurrentTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/distribute/DistributedLock.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/distribute/ZkTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/event/BrandChangePublisher.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/event/BrandEvent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/event/BrandInsertListener1.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/event/BrandInsertListener2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/event/BrandUpdateListener.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/javaagent/Agent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/javaagent/TestTransformer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/SqlStatInterceptor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/sql/mointor/SqlWebStatFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/resources/log4j.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/resources/webmvc-basic-webapp.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/LinkedListUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/StringComUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/dynamic/StringComUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/linked/LinkedListUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/linked/LinkedNode.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/algorithm/recursion/RecursionUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/crane/task/CraneTaskExample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/deadlock/DeadLock.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/hadoop/WordCount.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/BusyWorker.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/CallableThreadPool.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/CallableWorker.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/CallerHandle.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/InvokeAll.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/MainExit.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/RunableWorker.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/ScheduledThreadPool.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/ShutDownNoWait.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/ShutDownNow.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/ShutDownNowBusy.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/ShutDownNowSleep.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/ShutDownWait.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/SleepWorker.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/TestThreadGroup.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/threadpool/WorkerThreadPool.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/test/com/cweeyii/zookeeper/sample/ApplicationEventTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/test/com/cweeyii/zookeeper/sample/BaseTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/test/com/cweeyii/zookeeper/sample/EntityObject.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/test/com/cweeyii/zookeeper/sample/EquivalenceRelation.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/test/com/cweeyii/zookeeper/sample/ZookeeperSample.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/webapp/WEB-INF/web.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_api/src/main/java/com/sankuai/meituan/waimai/wdc/aspect/TimeCostAspectService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_api/src/main/java/com/sankuai/meituan/waimai/wdc/thrift/TAutoAuditService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_api/src/main/java/com/sankuai/meituan/waimai/wdc/thrift/TGeoCodeService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_api/src/main/java/com/sankuai/meituan/waimai/wdc/thrift/TPublicSeaPoiReportAuditService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_api/src/main/java/com/sankuai/meituan/waimai/wdc/thrift/TRelationService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_api/src/main/java/com/sankuai/meituan/waimai/wdc/thrift/TSimilarPoiRecommendService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/aspect/TimeCostAspectService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/baseinfo/service/RelationHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/baseinfo/service/RelationManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/baseinfo/service/impl/MdcRelateServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/baseinfo/service/impl/OuterRelateServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/baseinfo/service/impl/WdcRelationServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/distributedlocks/DistributedLock.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/distributedlocks/ZKUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/distributedlocks/ZkUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/example/dao/mapper/ClassroomExtMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/example/dao/mapper/ClassroomMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/example/dao/mapper/StudentMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/example/dao/mapper/impl/ClassroomExtMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/example/dao/mapper/impl/ClassroomMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/example/dao/mapper/impl/StudentMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/example/dao/martmapper/ClassroomExtMartMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/example/dao/martmapper/impl/ClassroomExtMartMapper.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/example/dao/martmapper/mapper/ClassroomMapper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/example/model/ClassroomModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/example/model/StudentService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/example/service/ClassroomService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/mdc/service/DefaultSubversiveServiceFrame.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/mdc/service/StagePoiService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/mdc/service/impl/StagePoiServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/mdc/service/subversive/BooleanDecision.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/mdc/service/subversive/CompareDecision.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/mdc/service/subversive/EqualDecision.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/mdc/service/subversive/FeatDecision.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/mdc/service/subversive/NameDecision.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/mdc/service/subversive/NameFeatureBuilderManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/mdc/service/subversive/PointNameFeature.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/similar/parse/impl/AbstractUniqueParseService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/java/com/sankuai/meituan/waimai/wdc/similar/parse/impl/UniqueWmPoiParseService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/resources/applicationContext-bean.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/resources/applicationContext-datasource.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/resources/applicationContext-mq.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_common/src/main/resources/applicationContext-subversive.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_mq/src/main/java/com/sankuai/meituan/waimai/wdc/mq/listener/StagePoiListener.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_mq/src/main/resources/base/applicationContext-mq-listener.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_task/src/main/java/com/sankuai/meituan/waimai/wdc/crane/task/HardRuleForWrongRelationTask.java">
+          <value>
+            <set>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="e572d4bd-588f-4a4d-8de9-aceab306cd5f" />
+                <option name="line" value="89" />
+                <option name="message" value="Equality tests should not be made with floating point values." />
+                <option name="ruleKey" value="squid:S1244" />
+                <option name="severity" value="CRITICAL" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="a8f5b2c1-50d6-4dca-a4b2-4dcea2294e58" />
+                <option name="line" value="71" />
+                <option name="message" value="Reduce the total number of break and continue statements in this loop to use at most one." />
+                <option name="ruleKey" value="squid:S135" />
+                <option name="severity" value="MAJOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="f2106b88-b1a5-4ecd-8fc2-4fb6657eb9d9" />
+                <option name="line" value="81" />
+                <option name="message" value="Equality tests should not be made with floating point values." />
+                <option name="ruleKey" value="squid:S1244" />
+                <option name="severity" value="CRITICAL" />
+              </SonarIssue>
+            </set>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_task/src/main/java/com/sankuai/meituan/waimai/wdc/crane/task/OfflineUniqueWmPoiTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_task/src/main/java/com/sankuai/meituan/waimai/wdc/crane/task/RelationDiscoveryTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_task/src/main/java/com/sankuai/meituan/waimai/wdc/crane/task/SyncMdcPoiTask.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_task/src/main/java/com/sankuai/meituan/waimai/wdc/web/api/ApiController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_task/src/main/resources/base/applicationContext-mvc.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_task/src/main/resources/base/applicationContext-mybatis.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_task/src/main/resources/base/applicationContext.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_task/src/main/resources/local/database.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_task/src/main/resources/local/hosts.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_task/src/main/resources/prod/hosts.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_task/src/main/webapp/WEB-INF/web.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_task/src/test/java/com/sankuai/meituan/waimai/wdc/CloseRelationGradeJobTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_task/src/test/java/com/sankuai/meituan/waimai/wdc/SyncPoiTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_web/src/main/resources/META-INF/app.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_web/src/main/resources/base/applicationContext.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_web/src/main/resources/base/mybatis-generator-config.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../waimai_m_poi/waimai_m_poi_web/src/test/java/com/sankuai/meituan/waimai/wdc/BaseTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.regexp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
           <value>
             <set />
           </value>

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hadoop-wordcount/hadoop-wordcount.iml" filepath="$PROJECT_DIR$/hadoop-wordcount/hadoop-wordcount.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaagent/javaagent.iml" filepath="$PROJECT_DIR$/javaagent/javaagent.iml" />
       <module fileurl="file://$PROJECT_DIR$/smart-industry-biz/smart-industry-biz.iml" filepath="$PROJECT_DIR$/smart-industry-biz/smart-industry-biz.iml" />
       <module fileurl="file://$PROJECT_DIR$/smart-industry-parent.iml" filepath="$PROJECT_DIR$/smart-industry-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/smart-industry-task/smart-industry-task.iml" filepath="$PROJECT_DIR$/smart-industry-task/smart-industry-task.iml" />

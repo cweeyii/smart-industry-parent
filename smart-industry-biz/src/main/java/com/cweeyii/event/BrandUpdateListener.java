@@ -1,0 +1,18 @@
+package com.cweeyii.event;
+
+import org.springframework.context.ApplicationListener;
+import org.springframework.stereotype.Component;
+
+/**
+ * Created by wenyi on 17/1/8.
+ * Email:caowenyi@meituan.com
+ */
+@Component
+public class BrandUpdateListener implements ApplicationListener<BrandEvent> {
+    @Override
+    public void onApplicationEvent(BrandEvent event) {
+        String operate=(String)event.getContext();
+        if(event.getContext() != null && event.getContext().equals("update"))
+            System.out.println("UpdateListener operate="+operate);
+    }
+}

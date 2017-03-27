@@ -20,7 +20,7 @@ public class SqlStatInterceptor implements MethodBeforeAdvice, InitializingBean,
 
     private static final String currentSignature = "currentMethodSignature";
 
-    @PostConstruct
+
     private void monitorThread() {
         new Thread(new MonitorThread<>(contextListener)).start();
     }

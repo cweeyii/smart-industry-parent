@@ -9,10 +9,11 @@
 			<param name="ConversionPattern" value="%d{HH:mm:ss.SSS} %5p (%F:%L) - %m%n" />
 		</layout>
 	</appender>
+	<appender name="Crane" class="com.cip.crane.client.common.log.CraneAppender" />
 	<!-- Root Logger -->
 	<root>
 		<priority value="info" />
 		<appender-ref ref="console" />
+		<appender-ref ref="Crane"/>
 	</root>
-
 </log4j:configuration>

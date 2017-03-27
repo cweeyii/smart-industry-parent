@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Premain-Class: com.cweeyii.agent.Agent
+Agent-Class: com.cweeyii.agent.LoadedAgent
+
