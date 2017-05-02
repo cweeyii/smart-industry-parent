@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+    http://www.springframework.org/schema/rabbit
+    http://www.springframework.org/schema/rabbit/spring-rabbit-1.0.xsd">
+
+    <description>rabbitmq消费者消息接受</description>
+    <!-- topic被路由到的队列,等待着绑定消费队列进行消费 -->
+    <rabbit:queue id="mart_queue" name="mart_queue" durable="true" auto-delete="false" exclusive="false"/>
+    <rabbit:queue id="poiop_queue" name="poiop_queue" durable="true" auto-delete="false" exclusive="false"/>
+    <rabbit:queue id="gis_queue" name="gis_queue" durable="true" auto-delete="false" exclusive="false"/>
+
+    <!-- 将Listener绑定到队列上接收发送者发送的消息 -->
+    <rabbit:listener-container connection-factory="receiveConnectionFactory" acknowledge="auto">
+        <rabbit:listener queues="mart_queue" ref="printListener"/>
+        <rabbit:listener queues="poiop_queue" ref="printListener"/>
+        <rabbit:listener queues="gis_queue" ref="printListener"/>
+    </rabbit:listener-container>
+
+    <bean id="printListener" class="com.cweeyii.rabbitmq.framework.reciever.DefaultListener"></bean>
+
+</beans>

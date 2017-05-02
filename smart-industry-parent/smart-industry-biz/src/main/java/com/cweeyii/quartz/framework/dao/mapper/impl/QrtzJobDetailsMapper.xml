@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cweeyii.quartz.framework.dao.mapper.QrtzJobDetailsMapper" >
+    
+    <select id="getAllJobDetails" resultType="com.cweeyii.quartz.framework.domain.QrtzJobDetails">
+    	 select job_name,job_group,description from QRTZ_JOB_DETAILS
+    </select>
+
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cweeyii.quartz.framework.dao.mapper.CronTriggerMapper" >
+
+    <resultMap id="BaseResultMap" type="com.cweeyii.quartz.framework.vo.CronTriggerVo" >
+
+        <result column="SCHED_NAME" property="schedName" jdbcType="VARCHAR" />
+        <result column="TRIGGER_NAME" property="triggerName" jdbcType="VARCHAR" />
+        <result column="TRIGGER_GROUP" property="triggerGroup" jdbcType="VARCHAR" />
+        <result column="CRON_EXPRESSION" property="cronExpression" jdbcType="VARCHAR" />
+        <result column="TIME_ZONE_ID" property="timeZoneID" jdbcType="VARCHAR" />
+
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        SCHED_NAME,TRIGGER_NAME,TRIGGER_GROUP,CRON_EXPRESSION,TIME_ZONE_ID
+    </sql>
+
+
+    <select id="getAllCronTriggers" resultType="com.cweeyii.quartz.framework.vo.CronTriggerVo">
+        select TRIGGER_NAME,CRON_EXPRESSION from  QRTZ_CRON_TRIGGERS
+    </select>
+
+</mapper>
