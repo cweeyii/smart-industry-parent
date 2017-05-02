@@ -1,3 +1,4 @@
+/*
 package com.cweeyii.crane.task;
  
 import com.cip.crane.client.common.log.LogConstants;
@@ -6,10 +7,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
  
+*/
 /**
  * Author   mingdongli
  * 16/6/30  上午10:03.
- */
+ *//*
+
 @Component
 public class CraneTaskExample {
     private final static Logger CRANE_LOGGER = LoggerFactory.getLogger(LogConstants.Crane);
@@ -26,4 +29,4 @@ public class CraneTaskExample {
         //实现自己的任务逻辑
     }
     
-}
+}*/

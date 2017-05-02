@@ -203,6 +203,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/java/com/cweeyii/threadpool/BasicThreadPoolFactory.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/smart-industry-biz/src/main/resources/log4j.xml">
           <value>
             <set />
@@ -259,6 +264,41 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/hadoop/WordCount.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/io/RemoteIp.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/io/ServerUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/io/blocking/BlockClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/io/blocking/BlockService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/io/nio/NIOClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/io/nio/NIOServer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/smart-industry-task/src/main/java/com/cweeyii/io/nio/NioService.java">
           <value>
             <set />
           </value>
@@ -618,19 +658,19 @@
             <set>
               <SonarIssue>
                 <option name="isNew" value="false" />
-                <option name="key" value="e572d4bd-588f-4a4d-8de9-aceab306cd5f" />
-                <option name="line" value="89" />
-                <option name="message" value="Equality tests should not be made with floating point values." />
-                <option name="ruleKey" value="squid:S1244" />
-                <option name="severity" value="CRITICAL" />
-              </SonarIssue>
-              <SonarIssue>
-                <option name="isNew" value="false" />
                 <option name="key" value="a8f5b2c1-50d6-4dca-a4b2-4dcea2294e58" />
                 <option name="line" value="71" />
                 <option name="message" value="Reduce the total number of break and continue statements in this loop to use at most one." />
                 <option name="ruleKey" value="squid:S135" />
                 <option name="severity" value="MAJOR" />
+              </SonarIssue>
+              <SonarIssue>
+                <option name="isNew" value="false" />
+                <option name="key" value="e572d4bd-588f-4a4d-8de9-aceab306cd5f" />
+                <option name="line" value="89" />
+                <option name="message" value="Equality tests should not be made with floating point values." />
+                <option name="ruleKey" value="squid:S1244" />
+                <option name="severity" value="CRITICAL" />
               </SonarIssue>
               <SonarIssue>
                 <option name="isNew" value="false" />

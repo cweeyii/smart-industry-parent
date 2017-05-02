@@ -15,6 +15,7 @@ com/cweeyii/quartz/framework/vo/JobInfo.class
 com/cweeyii/sql/mointor/SqlStatInterceptor$SQLMethodContextListener.class
 com/cweeyii/cache/framework/provider/EnterpriseDataRepertoryUnit.class
 com/cweeyii/quartz/framework/domain/QrtzJobDetails.class
+com/cweeyii/threadpool/BasicThreadPoolFactory$1.class
 com/cweeyii/cache/framework/annotation/CacheEntity.class
 com/cweeyii/cache/framework/DBDataReader.class
 com/cweeyii/quartz/framework/vo/TriggerInfo.class
@@ -36,6 +37,7 @@ com/cweeyii/cache/framework/redis/SmartRedis.class
 com/cweeyii/quartz/framework/AbstractSchedulerFactoryBean.class
 com/cweeyii/cache/framework/redis/impl/SmartRedisImpl.class
 com/cweeyii/event/BrandUpdateListener.class
+com/cweeyii/threadpool/BasicThreadPoolFactory.class
 com/cweeyii/event/BrandInsertListener1.class
 com/cweeyii/elasticsearch/framework/annotation/ElasticSearchParam.class
 com/cweeyii/rabbitmq/framework/vo/InternalMessageFactory.class
